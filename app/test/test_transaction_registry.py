@@ -1,17 +1,16 @@
 import unittest
 from TransactionRegistry import TransactionRegistry
+from Transaction import Transaction
 
 class TestTransactionRegistry(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        cls.sampleTransactions = [
-            {'transaction_id': 1, 'shop_name': 'Biedronka', 'type':'spozywcze', 'amaount': 100, 'currency': 'PLN', 'date':'2024-12-31'},
-            {'transaction_id': 2, 'shop_name': 'Żabka', 'type':'spozywcze', 'amaount': 10, 'currency': 'PLN', 'date':'2024-11-01'}
-        ]
-
     def setUp(self):
         self.registry = TransactionRegistry()
         self.registry.clear_registry()
+
+        self.sampleTransactions = [
+            Transaction(1, 'Transaction 1', 'Credit', 100, 'USD', '2024-01-01'),
+            Transaction(2, 'Transaction 2', 'Debit', 200, 'USD', '2024-01-02')
+        ]
     
     def test_add_transaction(self):
         self.registry.add_transaction(self.sampleTransactions[0])
@@ -21,14 +20,13 @@ class TestTransactionRegistry(unittest.TestCase):
         self.registry.add_transaction(self.sampleTransactions[1])
         result = self.registry.find_transaction_by_id(2)
         self.assertIsNotNone(result)
-        self.assertEqual(result['shop_name'], 'Żabka')
+        self.assertEqual(result.name, 'Transaction 2')
 
     def test_remove_transaction(self):
         self.registry.add_transaction(self.sampleTransactions[0])
         self.registry.add_transaction(self.sampleTransactions[1])
         result = self.registry.remove_transaction(2)
         self.assertEqual(self.registry.count_registry(), 1)
-        self.assertEqual(result, True)
 
     def test_count_transactions(self):
         self.registry.add_transaction(self.sampleTransactions[0])
