@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
@@ -27,13 +28,14 @@ const RegistrationPage = () => {
 
     async function SendJsonToApi(data) {
         console.log("Sending data:", data)
+
         try{
-            const response = await fetch('http://127.0.0.1:5000/api/user/register', {
+            const response = await fetch('http://localhost:8000/api/user/register', {
                 method:  "PUT",
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
             })
             if (!response.ok){
                 throw new Error(`HTTP error! status: ${response.status}`)
@@ -74,6 +76,9 @@ const RegistrationPage = () => {
                 </div>
 
                 <button type="submit">Sing Up</button>
+                <Link href='/'>
+                    <button> Go Back</button>
+                </Link>
             </form>
         </div>
     )

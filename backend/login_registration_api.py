@@ -4,7 +4,7 @@ from flask_cors import CORS
 from backend.database import Database
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000/*"}})
 
 db = Database()
 @app.route('/api/user/register', methods = ['PUT'])
@@ -51,4 +51,4 @@ def password_hashing(password):
     return hashed_password.decode('utf-8')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8000)
