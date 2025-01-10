@@ -3,7 +3,7 @@ import sqlite3
 class Database:
     def __init__(self, db_name = 'FinMate.db'):
         self.db_name = db_name
-        self.connection = sqlite3.connect(self.db_name)
+        self.connection = sqlite3.connect(self.db_name, check_same_thread=False)
         self.create_tables()
     
     def create_tables(self):
@@ -12,7 +12,7 @@ class Database:
         cursor.execute('''CREATE TABLE IF NOT EXISTS User(
                        email STRING PRIMARY KEY,
                        name STRING NOT NULL,
-                       password STRING NOT NULL,
+                       password STRING NOT NULL
                     )''')
         
         cursor.execute('''CREATE TABLE IF NOT EXISTS Transactions(
@@ -22,7 +22,7 @@ class Database:
                        description STRING NOT NULL,
                        date TEXT NOT NULL,
                        user_id STRING NOT NULL,
-                       FOREGIN KEY(user_id) REFERENCE User(email)
+                       FOREIGN KEY(user_id) REFERENCES User(email)
                     )''')
         self.connection.commit()
 
@@ -34,13 +34,13 @@ class Database:
     
     def add_transaction(self, amount = str, category = str, description = str, date = str, user_id = str):
         cursor = self.connection.cursor()
-        cursor.execute("INSERT INTO Transaction (amount, category, description, date, user_id) VALUE (?, ?, ?, ?, ?)", (amount, category, description, date, user_id))
+        cursor.execute("INSERT INTO Transactions (amount, category, description, date, user_id) VALUES (?, ?, ?, ?, ?)", (amount, category, description, date, user_id))
         self.connection.commit()
         print(f'Zapisano transakcje do bazy danych.')
     
-    def fetch_user_password(self, email = str, password = str):
+    def fetch_user_password(self, email = str):
         cursor = self.connection.cursor()
-        cursor.execute('SELECT password FROM User WHERE email = ?', (email))
+        cursor.execute('SELECT password FROM User WHERE email = ?', (email,))
         result = cursor.fetchall()
         return result[0] if result else None
 
@@ -48,6 +48,13 @@ class Database:
         cursor = self.connection.cursor()
         cursor.execute('SELECT ')
         return cursor.fetchall()
+    
+    def check_if_email_has_account(self, email = str) -> bool:
+        cursor = self.connection.cursor()
+        cursor.execute('SELECT email FROM User WHERE email = ?', (email,))
+        result = cursor.fetchall()
+        return result[0] if result else None
+
 
 if __name__ == "__main__":
     db = Database()
