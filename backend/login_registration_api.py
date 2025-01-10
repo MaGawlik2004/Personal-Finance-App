@@ -1,8 +1,10 @@
 import bcrypt
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from backend.database import Database
 
 app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 db = Database()
 @app.route('/api/user/register', methods = ['PUT'])
@@ -27,6 +29,9 @@ def find_email(email = str):
 @app.route('/api/user/login', methods = ['POST'])
 def login_account():
     data = request.get_json()
+
+    if find_email(data.get('email')) == False:
+        return jsonify({'error': 'Account with this email dose not exist.'}), 409
 
     result = db.fetch_user_password(data.get('email'))
     
