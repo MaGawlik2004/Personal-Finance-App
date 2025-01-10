@@ -24,9 +24,21 @@ def find_email(email = str):
     else:
         return False
     
-@app.route('/api/user/register', methods = ['GET'])
+@app.route('/api/user/login', methods = ['POST'])
 def login_account():
-    pass
+    data = request.get_json()
+
+    result = db.fetch_user_password(data.get('email'))
+    
+    if result:
+        hashed_password = result[0]
+        
+        if bcrypt.checkpw(data.get('password').encode('utf-8'), hashed_password.encode('utf-8')):
+            return jsonify({'message': 'Login successful'}), 200
+        else:
+            return jsonify({'error': 'Invalid email or password'}), 401
+    else:
+        return jsonify({'error': 'Invalid email or password'}), 401
     
 def password_hashing(password):
     salt = bcrypt.gensalt()
