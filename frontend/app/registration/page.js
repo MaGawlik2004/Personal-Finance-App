@@ -48,37 +48,39 @@ const RegistrationPage = () => {
         
     }
     return (
-        <div className="registration-form">
-            <h1>Sing Up</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
-                    <label>Name</label>
-                    <input type="text" {...register("name")} />
+        <div className="Register-Page">
+            <h1 className='rgister_page_welcome'>Sing Up</h1>
+            <form onSubmit={handleSubmit(onSubmit)} className='register_page_form'>
+                <div className='name_form_register_page'>
+                    <label className='name_register'>Name</label>
+                    <input className='input_name_register' type="text" {...register("name")} />
                     <p style={{ color: "red"}}>{errors.name?.message}</p>
                 </div>
 
-                <div>
-                    <label>Email</label>
+                <div className='email_form_register_page'>
+                    <label className='email_register'>Email</label>
                     <input type="email" {...register("email")} />
                     <p style={{ color: "red" }}>{errors.email?.message}</p>
                 </div>
 
-                <div>
-                    <label>Password</label>
-                    <input type="password" {...register("password")} />
+                <div className='password_form_register_page'>
+                    <label className='password_register'>Password</label>
+                    <input className='input_email_register' type="password" {...register("password")} />
                     <p style={{ color: "red" }}>{errors.password?.message}</p>
                 </div>
 
-                <div>
-                    <label>Repet Password</label>
+                <div className='repet_password_form_register_page'>
+                    <label className='repet_password_register'>Repet Password</label>
                     <input type="password" {...register("confirmPassword")} />
                     <p style={{ color: "red" }}>{errors.confirmPassword?.message}</p>
                 </div>
 
-                <button type="submit">Sing Up</button>
-                <Link href='/'>
-                    <button> Go Back</button>
-                </Link>
+                <div className='register_form_buttons'>
+                    <button type="submit" className='register_button'>Sing Up</button>
+                    <Link href='/'>
+                        <button className='go_back_button'> Go Back</button>
+                    </Link>
+                </div>
             </form>
         </div>
     )

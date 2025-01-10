@@ -53,25 +53,27 @@ const LoginPage = () => {
         
     }
     return (
-        <div>
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div>
-                    <label>Email</label>
-                    <input type="email" {...register("email")} />
-                    <p style={{ color: "red" }}>{errors.email?.message}</p>
+        <div className='Login-Page'>
+            <h1 className='login_page_welcome'>Login</h1>
+            <form onSubmit={handleSubmit(onSubmit)} className='login_page_form'>
+                <div className='email_form_login_page'>
+                    <label className='email_login'>Email</label>
+                    <input className='input_email_login' type="email" {...register("email")} />
+                    <p className='p_login' style={{ color: "red" }}>{errors.email?.message}</p>
                 </div>
 
-                <div>
-                    <label>Password</label>
-                    <input type="password" {...register("password")} />
+                <div className='password_form_login_page'>
+                    <label className='password_login'>Password</label>
+                    <input className='input_password_login' type="password" {...register("password")} />
                     <p style={{ color: "red" }}>{errors.password?.message}</p>
                 </div>
 
-                <button type="submit">Login</button>
-                <Link href='/'>
-                    <button>Go Back</button>
-                </Link>
+                <div className='login_form_buttons'>
+                    <button type="submit" className='login_button'>Login</button>
+                    <Link href='/'>
+                        <button className='go_back_button'>Go Back</button>
+                    </Link>
+                </div>
             </form>
         </div>
     )

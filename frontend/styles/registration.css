@@ -1,3 +1,118 @@
-main{
-    display: inline;
+.Register-Page{
+    display: grid;
+    grid-template-rows:1fr 4fr;
+    gap: 10px;
+    border: 1px solid #e5fffc;
+    border-radius: 25px;
+    background-color: #f1fffd;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 600px;
+}
+
+.rgister_page_welcome{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: #34508c;
+}
+
+.register_page_form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+}
+
+.name_form_register_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_register{
+    font-size: 30px;
+    margin-right: 105px;
+    color: #34508c;
+}
+
+.input_name_register{
+    height: 20px;
+    margin-left: 30px;
+}
+
+.email_form_register_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email_register{
+    font-size: 30px;
+    margin-right: 135px;
+    color: #34508c;
+}
+
+.input_email_register{
+    height: 20px;
+}
+
+.password_form_register_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password_register{
+    font-size: 30px;
+    margin-right: 90px;
+    color: #34508c;
+}
+
+.input_password_register{
+    height: 20px;
+}
+
+.repet_password_form_register_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repet_password_register{
+    font-size: 30px;
+    margin-right: 15px;
+    color: #34508c;
+}
+
+.input_repet_password_register{
+    height: 20px;
+}
+
+
+
+.register_form_buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register_button{
+    background-color: #f8f8f8;
+    border: 2px solid #34508c;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #34508c;
+    width: 200px;
+    height: 70px;
+}
+
+.go_back_button{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f8f8f8;
+    width: 200px;
+    height: 70px;
 }
