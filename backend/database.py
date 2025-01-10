@@ -20,9 +20,34 @@ class Database:
                        amount INTEGER NOT NULL,
                        category STRING NOT NULL,
                        description STRING NOT NULL,
-                       date DATE
+                       date TEXT NOT NULL,
+                       user_id STRING NOT NULL,
+                       FOREGIN KEY(user_id) REFERENCE User(email)
                     )''')
         self.connection.commit()
+
+    def add_user(self, email = str, name = str, password = str):
+        cursor = self.connection.cursor()
+        cursor.execute("INSERT INTO User (email, name, password) VALUES(?, ?, ?)", (email, name, password))
+        self.connection.commit()
+        print(f'Zarejestrowano uytkownika {name} do bazy danych.')
+    
+    def add_transaction(self, amount = str, category = str, description = str, date = str, user_id = str):
+        cursor = self.connection.cursor()
+        cursor.execute("INSERT INTO Transaction (amount, category, description, date, user_id) VALUE (?, ?, ?, ?, ?)", (amount, category, description, date, user_id))
+        self.connection.commit()
+        print(f'Zapisano transakcje do bazy danych.')
+    
+    def fetch_user_password(self, email = str, password = str):
+        cursor = self.connection.cursor()
+        cursor.execute('SELECT password FROM User WHERE email = ?', (email))
+        result = cursor.fetchall()
+        return result[0] if result else None
+
+    def fetch_user_(self, user_id = str):
+        cursor = self.connection.cursor()
+        cursor.execute('SELECT ')
+        return cursor.fetchall()
 
 if __name__ == "__main__":
     db = Database()
