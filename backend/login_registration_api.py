@@ -81,5 +81,14 @@ def get_transactions(user_email):
     
     return jsonify(result), 200
 
+@app.route('/api/user/<user_email>/transaction/<transaction_id>', methods = ['DELETE'])
+def delete_transaction(user_email, transaction_id):
+    transaction = db.get_transaction_by_id(transaction_id, user_email)
+    if not transaction:
+        return jsonify({'error': 'Transaction not found or does not belong to the user.'}), 404
+    
+    db.delete_transaction(transaction_id, user_email)
+    return jsonify({'message': 'Transaction deleted successfully.'}), 200
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)

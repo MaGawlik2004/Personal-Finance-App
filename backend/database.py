@@ -55,6 +55,17 @@ class Database:
         cursor.execute('SELECT email FROM User WHERE email = ?', (email,))
         result = cursor.fetchall()
         return result[0] if result else None
+    
+    def get_transaction_by_id(self, transaction_id, email):
+        cursor = self.connection.cursor()
+        cursor.execute('SELECT id FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))
+        result = cursor.fetchall()
+        return result[0] if result else None
+    
+    def delete_transaction(self, transaction_id, email):
+        cursor = self.connection.cursor()
+        cursor.execute('DELETE FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))
+        self.connection.commit()
 
 
 if __name__ == "__main__":
