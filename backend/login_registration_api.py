@@ -58,7 +58,7 @@ def password_hashing(password):
 def add_transaction(user_email):
     data = request.get_json()
 
-    db.add_transaction(data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
+    db.add_transaction(data.get('amount'), data.get('category'), data.get('storeName'), data.get('date'), user_email)
     return jsonify({'message': 'Transaction Added.'}), 201
 
 @app.route('/api/user/<user_email>/transaction', methods = ['GET'])

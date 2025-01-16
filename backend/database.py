@@ -17,7 +17,7 @@ class Database:
         
         cursor.execute('''CREATE TABLE IF NOT EXISTS Transactions(
                        id INTEGER PRIMARY KEY AUTOINCREMENT,
-                       amount INTEGER NOT NULL,
+                       amount NUMERIC NOT NULL,
                        category STRING NOT NULL,
                        description STRING NOT NULL,
                        date TEXT NOT NULL,
@@ -32,12 +32,12 @@ class Database:
         self.connection.commit()
         print(f'Zarejestrowano uytkownika {name} do bazy danych.')
     
-    def add_transaction(self, amount = str, category = str, description = str, date = str, user_id = str):
+    def add_transaction(self, amount, category = str, description = str, date = str, user_id = str):
         cursor = self.connection.cursor()
         cursor.execute("INSERT INTO Transactions (amount, category, description, date, user_id) VALUES (?, ?, ?, ?, ?)", (amount, category, description, date, user_id))
         self.connection.commit()
         print(f'Zapisano transakcje do bazy danych.')
-    
+        
     def fetch_user_password(self, email = str):
         cursor = self.connection.cursor()
         cursor.execute('SELECT password FROM User WHERE email = ?', (email,))

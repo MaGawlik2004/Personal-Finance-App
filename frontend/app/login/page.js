@@ -41,6 +41,7 @@ const LoginPage = () => {
             const result = await response.json()
             console.log(result)
             if (result.message === 'Login successful'){
+                sessionStorage.setItem('email', data.email)
                 router.push('/transaction_list')
             } else {
                 console.log(result)
