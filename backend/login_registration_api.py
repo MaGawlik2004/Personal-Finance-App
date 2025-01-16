@@ -7,6 +7,8 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000/*"}})
 
 db = Database()
+
+# Login Registration Endpoints
 @app.route('/api/user/register', methods = ['PUT'])
 def register_account():
     data = request.get_json()
@@ -49,6 +51,35 @@ def password_hashing(password):
     salt = bcrypt.gensalt()
     hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
     return hashed_password.decode('utf-8')
+
+
+# Transactions Endpoints
+@app.route('/api/user/<user_email>/transaction', methods = ['PUT'])
+def add_transaction(user_email):
+    data = request.get_json()
+
+    db.add_transaction(data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
+    return jsonify({'message': 'Transaction Added.'}), 201
+
+@app.route('/api/user/<user_email>/transaction', methods = ['GET'])
+def get_transactions(user_email):
+    transactions = db.get_transactions_by_user(user_email)
+
+    if not transactions:
+        return jsonify({'message': 'No transactions found for this user.'}), 404
+    
+    result = []
+    for transaction in transactions:
+        result.append({
+            'id': transaction[0],
+            'amount': transaction[1],
+            'category': transaction[2],
+            'description': transaction[3],
+            'date': transaction[4],
+            'user_id': transaction[5]
+        })
+    
+    return jsonify(result), 200
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)

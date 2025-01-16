@@ -44,10 +44,11 @@ class Database:
         result = cursor.fetchall()
         return result[0] if result else None
 
-    def fetch_user_(self, user_id = str):
+    def get_transactions_by_user(self, user_id = str):
         cursor = self.connection.cursor()
-        cursor.execute('SELECT ')
-        return cursor.fetchall()
+        cursor.execute("SELECT * FROM Transactions WHERE user_id = ?", (user_id,))
+        transactions = cursor.fetchall()
+        return transactions
     
     def check_if_email_has_account(self, email = str) -> bool:
         cursor = self.connection.cursor()

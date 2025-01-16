@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React from "react"
 import { useForm } from "react-hook-form"
+import { useRouter } from 'next/navigation';
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 
@@ -13,6 +14,8 @@ const schema = yup.object().shape({
 })
 
 const RegistrationPage = () => {
+    const router = useRouter()
+
     const{
         register,
         handleSubmit,
@@ -22,8 +25,11 @@ const RegistrationPage = () => {
     })
 
     const onSubmit = (data) => {
+        alert(`Użytkownik ${data.name} został zarejestrowany!`);
         const {confirmPassword, ...filteredData} = data
         SendJsonToApi(filteredData)
+        router.push('/login')
+        
     }
 
     async function SendJsonToApi(data) {
@@ -59,24 +65,24 @@ const RegistrationPage = () => {
 
                 <div className='email_form_register_page'>
                     <label className='email_register'>Email</label>
-                    <input type="email" {...register("email")} />
+                    <input className='input_email_register' type="email" {...register("email")} />
                     <p style={{ color: "red" }}>{errors.email?.message}</p>
                 </div>
 
                 <div className='password_form_register_page'>
                     <label className='password_register'>Password</label>
-                    <input className='input_email_register' type="password" {...register("password")} />
+                    <input className='input_password_register' type="password" {...register("password")} />
                     <p style={{ color: "red" }}>{errors.password?.message}</p>
                 </div>
 
                 <div className='repet_password_form_register_page'>
                     <label className='repet_password_register'>Repet Password</label>
-                    <input type="password" {...register("confirmPassword")} />
+                    <input className='input_repet_password_register' type="password" {...register("confirmPassword")} />
                     <p style={{ color: "red" }}>{errors.confirmPassword?.message}</p>
                 </div>
 
                 <div className='register_form_buttons'>
-                    <button type="submit" className='register_button'>Sing Up</button>
+                        <button type="submit" className='register_button'>Sing Up</button>
                     <Link href='/'>
                         <button className='go_back_button'> Go Back</button>
                     </Link>
