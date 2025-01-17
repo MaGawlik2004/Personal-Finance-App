@@ -42,7 +42,7 @@ const LoginPage = () => {
             console.log(result)
             if (result.message === 'Login successful'){
                 sessionStorage.setItem('email', data.email)
-                router.push('/transaction_list')
+                router.push('/statistics')
             } else {
                 console.log(result)
                 console.log("Błąd rejestracji:", result.message)

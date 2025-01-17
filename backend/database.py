@@ -67,11 +67,10 @@ class Database:
         cursor.execute('SELECT * FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))
         result = cursor.fetchall()
         if not result:
-            return None  # Zwróć None, jeśli nie znaleziono transakcji
+            return None 
         
-        # Upewnij się, że indeksy odpowiadają poprawnym danym z bazy danych
         transaction = {
-            'id': result[0][0],  # Zakładając, że ID jest pierwszym polem w tabeli
+            'id': result[0][0], 
             'amount': result[0][1],
             'category': result[0][2],
             'description': result[0][3],
@@ -85,16 +84,28 @@ class Database:
         cursor.execute('SELECT amount FROM Transactions WHERE user_id = ? AND category = ?', (email, category))
         result = cursor.fetchall()
         if not result:
-            return 0  # Zwróć 0, jeśli nie znaleziono transakcji
+            return 0 
         sum = 0
         for row in result:
-            sum += row[0]  # row[0] to wartość kwoty z transakcji
+            sum += row[0]  
+        return sum
+    
+    def get_amount_from_all_transaction_except_revenue(self, email):
+        cursor = self.connection.cursor()
+        cursor.execute('SELECT amount FROM Transactions WHERE user_id = ? AND category != ?', (email, 'Revenue'))
+        result = cursor.fetchall()
+        if not result:
+            return 0 
+        sum = 0
+        for row in result:
+            sum += row[0]  
         return sum
     
     def delete_transaction(self, transaction_id, email):
         cursor = self.connection.cursor()
         cursor.execute('DELETE FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))
         self.connection.commit()
+
 
 
 if __name__ == "__main__":
