@@ -80,6 +80,17 @@ class Database:
         
         return transaction
     
+    def get_amounts_from_transactions(self, email, category):
+        cursor = self.connection.cursor()
+        cursor.execute('SELECT amount FROM Transactions WHERE user_id = ? AND category = ?', (email, category))
+        result = cursor.fetchall()
+        if not result:
+            return 0  # Zwróć 0, jeśli nie znaleziono transakcji
+        sum = 0
+        for row in result:
+            sum += row[0]  # row[0] to wartość kwoty z transakcji
+        return sum
+    
     def delete_transaction(self, transaction_id, email):
         cursor = self.connection.cursor()
         cursor.execute('DELETE FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))

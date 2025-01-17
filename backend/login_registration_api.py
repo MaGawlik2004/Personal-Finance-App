@@ -104,5 +104,10 @@ def update_transaction(user_email, transaction_id):
     db.update_transaction(transaction_id, data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
     return jsonify({'message': 'Transaction updated'}), 200
 
+@app.route('/api/user/<user_email>/transaction/category/<category>', methods = ['GET'])
+def get_amount_for_category(user_email, category):
+    amount = db.get_amounts_from_transactions(user_email, category)
+    return jsonify({"totalAmount": amount}), 200
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)

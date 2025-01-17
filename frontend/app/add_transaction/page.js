@@ -46,8 +46,8 @@ const AddTransactionPage = () => {
             <Formik
             initialValues={{
                 description: "",
-                category: "",
-                amount: 1,
+                category: "Chose Category",
+                amount: '',
                 date: "",
             }}
             validationSchema={schema}
