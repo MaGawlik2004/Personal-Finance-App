@@ -58,7 +58,7 @@ def password_hashing(password):
 def add_transaction(user_email):
     data = request.get_json()
 
-    db.add_transaction(data.get('amount'), data.get('category'), data.get('storeName'), data.get('date'), user_email)
+    db.add_transaction(data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
     return jsonify({'message': 'Transaction Added.'}), 201
 
 @app.route('/api/user/<user_email>/transaction', methods = ['GET'])
@@ -89,6 +89,20 @@ def delete_transaction(user_email, transaction_id):
     
     db.delete_transaction(transaction_id, user_email)
     return jsonify({'message': 'Transaction deleted successfully.'}), 200
+
+@app.route('/api/user/<user_email>/transaction/<transaction_id>', methods = ['GET'])
+def get_transaction_by_id(user_email, transaction_id):
+    transaction = db.get_transaction_by_id(transaction_id, user_email)
+    if transaction:
+            return jsonify(transaction), 200
+    else:
+        return jsonify({'error': 'Transaction not found'}), 404
+
+@app.route('/api/user/<user_email>/transaction/<transaction_id>', methods = ['PUT'])
+def update_transaction(user_email, transaction_id):
+    data = request.get_json()
+    db.update_transaction(transaction_id, data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
+    return jsonify({'message': 'Transaction updated'}), 200
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)

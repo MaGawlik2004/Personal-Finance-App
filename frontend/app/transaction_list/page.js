@@ -63,7 +63,9 @@ const TransactionListPage = () => {
                     <li key={transaction.id}>
                         {transaction.description}: {transaction.category}: {transaction.amount}: {transaction.date}
                         <button onClick={() => handleDelete(transaction.id)}>Delete</button>
-                        <button>Edit</button>
+                        <Link href={`/transaction_list/${transaction.id}`}>
+                            <button>Edit</button>
+                        </Link>
                     </li>
                 ))}
             </ul>

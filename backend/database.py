@@ -37,6 +37,12 @@ class Database:
         cursor.execute("INSERT INTO Transactions (amount, category, description, date, user_id) VALUES (?, ?, ?, ?, ?)", (amount, category, description, date, user_id))
         self.connection.commit()
         print(f'Zapisano transakcje do bazy danych.')
+
+    def update_transaction(self, transaction_id, amount, category = str, description = str, date = str, user_id = str):
+        cursor = self.connection.cursor()
+        cursor.execute("UPDATE Transactions SET amount = ?, category = ?, description = ?, date = ? WHERE user_id = ? AND id = ?", (amount, category, description, date, user_id, transaction_id))
+        self.connection.commit()
+        print(f'Zmodyfikowano transakcje {transaction_id}.')
         
     def fetch_user_password(self, email = str):
         cursor = self.connection.cursor()
@@ -58,9 +64,21 @@ class Database:
     
     def get_transaction_by_id(self, transaction_id, email):
         cursor = self.connection.cursor()
-        cursor.execute('SELECT id FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))
+        cursor.execute('SELECT * FROM Transactions WHERE user_id = ? AND id = ?', (email, transaction_id))
         result = cursor.fetchall()
-        return result[0] if result else None
+        if not result:
+            return None  # Zwróć None, jeśli nie znaleziono transakcji
+        
+        # Upewnij się, że indeksy odpowiadają poprawnym danym z bazy danych
+        transaction = {
+            'id': result[0][0],  # Zakładając, że ID jest pierwszym polem w tabeli
+            'amount': result[0][1],
+            'category': result[0][2],
+            'description': result[0][3],
+            'date': result[0][4],
+        }
+        
+        return transaction
     
     def delete_transaction(self, transaction_id, email):
         cursor = self.connection.cursor()

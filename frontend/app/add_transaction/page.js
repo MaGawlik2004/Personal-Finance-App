@@ -5,8 +5,8 @@ import { Formik, Field, Form } from "formik";
 import * as yup from 'yup'
 
 const schema = yup.object().shape({
-    storeName: yup.string().required('Nazwa sklepu jest wymagana.'),
-    amount: yup.number().required("Kwota jest wymagana."),
+    description: yup.string().required('Nazwa sklepu jest wymagana.'),
+    amount: yup.number().required("Kwota jest wymagana.").positive("Kwota musi być większa od zera."),
     category: yup.string().required('Kategoria jest wymagana.'),
     date: yup.date().required('Data jest wymagana.')
 })
@@ -45,7 +45,7 @@ const AddTransactionPage = () => {
             <h1 className="add_transaction_page_welcome">Add Transaction</h1>
             <Formik
             initialValues={{
-                storeName: "",
+                description: "",
                 category: "",
                 amount: 1,
                 date: "",
@@ -56,10 +56,10 @@ const AddTransactionPage = () => {
             {({ errors, touched }) => (
                 <Form className="Add_Transaction_Form">
                     <div>
-                        <label htmlFor="storeName">Store Name</label>
-                        <Field id='storeName' name='storeName' />
-                        {errors.storeName && touched.storeName ? (
-                            <div>{errors.storeName}</div>
+                        <label htmlFor="description">Store Name</label>
+                        <Field id='description' name='description' />
+                        {errors.description && touched.description ? (
+                            <div>{errors.description}</div>
                         ) : null}
                     </div>
 
@@ -86,7 +86,7 @@ const AddTransactionPage = () => {
                     </div>
 
                     <div className="date">
-                        <label htmlFor="date">Data Treningu</label>
+                        <label htmlFor="date">Transaction Date</label>
                         <Field id="date" name="date" type="date" />
                         {errors.date && touched.date ? (
                         <div>{errors.date}</div>
