@@ -55,24 +55,40 @@ const TransactionListPage = () => {
         }
     };
     return(
-        <div>
-            <h1>TransactionList</h1>
+        <div className='Transaction_List_Page'>
+            <h1 className='Transaction_List_Welcom'>TransactionList</h1>
 
-            <ul>
+            <div className='transaction_list'>
+            <ul class="transaction-table">
+                <li class="table-header">
+                    <p>Store Name</p>
+                    <p>Category</p>
+                    <p>Amount</p>
+                    <p>Transaction Date</p>
+                    <p>Actions</p>
+                </li>
                 {allTransactions.map((transaction) => (
-                    <li key={transaction.id}>
-                        {transaction.description}: {transaction.category}: {transaction.amount}: {transaction.date}
-                        <button onClick={() => handleDelete(transaction.id)}>Delete</button>
-                        <Link href={`/transaction_list/${transaction.id}`}>
-                            <button>Edit</button>
-                        </Link>
+                    <li key={transaction.id} class="table-row">
+                        <p>{transaction.description}</p>
+                        <p>{transaction.category}</p>
+                        <p>{transaction.amount}</p>
+                        <p>{transaction.date}</p>
+                        <div class="actions">
+                            <button onClick={() => handleDelete(transaction.id)}>Delete</button>
+                            <Link href={`/transaction_list/${transaction.id}`}>
+                                <button>Edit</button>
+                            </Link>
+                        </div>
                     </li>
                 ))}
             </ul>
-            <Link href='/add_transaction'>
-                <button>+</button>
-            </Link>
+            <div className='button_div'>
+                <Link href='/add_transaction'>
+                    <button className='add_button'>+</button>
+                </Link>
+            </div>
         </div>
+    </div>
     )
 }
 

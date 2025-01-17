@@ -94,7 +94,7 @@ main{
 }
 
 .home_page_link a {
-    text-decoration: none; /* Usuwamy podkreślenie z tagu <a> generowanego przez Link */
+    text-decoration: none;
 }
 
 .home_page_login_button{
@@ -108,10 +108,10 @@ main{
     height: 70px;
 }
 
-.home_page_login_button:visited,
-.home_page_login_button:hover,
-.home_page_login_button:active {
-  text-decoration: none;
+.home_page_login_button:hover{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
 }
 
 .home_page_registration_button{
@@ -125,10 +125,8 @@ main{
     height: 70px;
 }
 
-
-.home_page_registration_button:visited,
-.home_page_registration_button:hover,
-.home_page_registration_button:active {
-  text-decoration: none;
+.home_page_registration_button:hover{
+    background-color: #f8f8f8;
+    border: 2px solid #34508c;
+    color: #34508c;
 }
-  

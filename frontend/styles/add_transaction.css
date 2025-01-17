@@ -1,0 +1,148 @@
+.Add_Transaction_Page{
+    display: grid;
+    grid-template-rows:1fr 4fr;
+    gap: 10px;
+    border: 1px solid #e5fffc;
+    border-radius: 25px;
+    background-color: #f1fffd;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 600px;
+}
+
+.add_transaction_page_welcome{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: #34508c;
+}
+
+.Add_Transaction_Form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+}
+
+.div_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.string_name{
+    font-size: 30px;
+    font-weight: bold;
+    color: #34508c;
+    margin-right: 150px;
+}
+
+.aa_name{
+    width: 200px;
+    height: 30px;
+}
+
+.string_category{
+    font-size: 30px;
+    font-weight: bold;
+    color: #34508c;
+    margin-right: 150px;
+}
+
+.aa_category{
+    width: 205px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.string_amount{
+    font-size: 30px;
+    font-weight: bold;
+    color: #34508c;
+    margin-right: 200px;
+}
+
+.aa_amount{
+    width: 200px;
+    height: 30px;
+}
+
+.string_date{
+    font-size: 30px;
+    font-weight: bold;
+    color: #34508c;
+    margin-right: 75px;
+}
+
+.aa_date{
+    width: 205px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.set_submit_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_button{
+    background-color: #f8f8f8;
+    border: 2px solid #34508c;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #34508c;
+    width: 400px;
+    height: 70px;
+}
+
+.set_submit_buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.update_button{
+    background-color: #f8f8f8;
+    border: 2px solid #34508c;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #34508c;
+    width: 200px;
+    height: 70px;
+}
+
+.cancle_button{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f8f8f8;
+    width: 200px;
+    height: 70px;
+}
+
+.submit_button:hover{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+}
+
+.update_button:hover{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+}
+
+.cancle_button:hover{
+    background-color: #f8f8f8;
+    border: 2px solid #34508c;
+    color: #34508c;
+}

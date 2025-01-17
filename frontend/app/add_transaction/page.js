@@ -55,17 +55,17 @@ const AddTransactionPage = () => {
             >
             {({ errors, touched }) => (
                 <Form className="Add_Transaction_Form">
-                    <div>
-                        <label htmlFor="description">Store Name</label>
-                        <Field id='description' name='description' />
+                    <div className="div_form">
+                        <label htmlFor="description" className="string_name">Store Name</label>
+                        <Field id='description' name='description' className="aa_name"/>
                         {errors.description && touched.description ? (
                             <div>{errors.description}</div>
                         ) : null}
                     </div>
 
-                    <div>
-                        <label htmlFor="category">Category</label>
-                        <Field as='select' id='category' name='category'>
+                    <div className="div_form">
+                        <label htmlFor="category" className="string_category">Category</label>
+                        <Field as='select' id='category' name='category' className="aa_category">
                         {category_list.map((category) => (
                             <option key={category} value={category}>
                                 {category}
@@ -77,23 +77,25 @@ const AddTransactionPage = () => {
                         ) : null}
                     </div>
 
-                    <div>
-                        <label htmlFor="amount">Amount</label>
-                        <Field id='amount' name='amount' />
+                    <div className="div_form">
+                        <label htmlFor="amount" className="string_amount">Amount</label>
+                        <Field id='amount' name='amount' className="aa_amount"/>
                         {errors.storeName && touched.storeName ? (
                             <div>{errors.storeName}</div>
                         ) : null}
                     </div>
 
                     <div className="date">
-                        <label htmlFor="date">Transaction Date</label>
-                        <Field id="date" name="date" type="date" />
+                        <label htmlFor="date" className="string_date">Transaction Date</label>
+                        <Field id="date" name="date" type="date" className="aa_date"/>
                         {errors.date && touched.date ? (
                         <div>{errors.date}</div>
                         ) : null}
                     </div>
 
-                    <button className='submit_button' type="submit">Dodaj notatkę</button>
+                    <div className="set_submit_button">
+                        <button className='submit_button' type="submit">Dodaj notatkę</button>
+                    </div>
                 </Form>
             )}
             </Formik>

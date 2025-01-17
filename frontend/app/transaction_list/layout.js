@@ -1,6 +1,8 @@
+import '../../styles/transaction_list.css';
+
 export default function TransactionListLayout({ children }) {
     return (
-      <div>
+      <div className='set_transaction_list'>
         <section>
             { children }
         </section>

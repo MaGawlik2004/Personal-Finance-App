@@ -116,3 +116,9 @@
     width: 200px;
     height: 70px;
 }
+
+.register_button:hover{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+}

@@ -84,8 +84,8 @@ const EditTransactionPage = () => {
     };
     
     return (
-        <div>
-            <h1>Edytuj Transakcję</h1>
+        <div className="Add_Transaction_Page">
+            <h1 className="add_transaction_page_welcome">Edytuj Transakcję</h1>
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
@@ -93,22 +93,23 @@ const EditTransactionPage = () => {
                 onSubmit={onSubmit}
             >
                 {({ errors, touched }) => (
-                    <Form>
-                        <div>
-                            <label htmlFor="description">Store Name:</label>
+                    <Form className="Add_Transaction_Form">
+                        <div className="div_form">
+                            <label htmlFor="description" className="string_name">Store Name:</label>
                             <Field 
                                 type='text'
                                 id='description'
                                 name='description'
+                                className="aa_name"
                             />
                             {errors.description && touched.description && (
                                 <div>{errors.description}</div>
                             )}
                         </div>
 
-                        <div>
-                            <label htmlFor="category">Category:</label>
-                            <Field as="select" id="category" name="category">
+                        <div className="div_form">
+                            <label htmlFor="category" className="string_category">Category:</label>
+                            <Field as="select" id="category" name="category" className="aa_category">
                                 {category_list.map((category) => (
                                     <option key={category} value={category}>
                                         {category}
@@ -120,37 +121,42 @@ const EditTransactionPage = () => {
                             )}
                         </div>
 
-                        <div>
-                            <label htmlFor="amount">Amount:</label>
+                        <div className="div_form">
+                            <label htmlFor="amount" className="string_amount">Amount:</label>
                             <Field 
                                 type='number'
                                 id='amount'
                                 name='amount'
+                                className="aa_amount"
                             />
                             {errors.amount && touched.amount && (
                                 <div>{errors.amount}</div>
                             )}
                         </div>
 
-                        <div>
-                            <label htmlFor="date">Transaction Date:</label>
+                        <div className="date">
+                            <label htmlFor="date" className="string_date">Transaction Date:</label>
                             <Field 
                                 type='date'
                                 id='date'
                                 name='date'
+                                className="aa_date"
                             />
                             {errors.date && touched.date && (
                                 <div>{errors.date}</div>
                             )}
                         </div>
 
-                        <button type="submit">Update</button>
-                        <button
-                            type="button"
-                            onClick={() => router.push('/transaction_list')}
-                        >
-                            Cancle
-                        </button>
+                        <div className="set_submit_buttons">
+                            <button type="submit" className='update_button'>Update</button>
+                            <button
+                                type="button"
+                                onClick={() => router.push('/transaction_list')}
+                                className='cancle_button'
+                            >
+                                Cancle
+                            </button>
+                        </div>
                     </Form>
                 )}
             </Formik>
