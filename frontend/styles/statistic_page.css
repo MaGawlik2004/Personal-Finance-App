@@ -3,7 +3,7 @@
 }
 .statistics_page{
     display: grid;
-    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 4fr 0.5fr;
     border: 1px solid #e5fffc;
     border-radius: 25px;
     background-color: #f1fffd;
@@ -60,4 +60,28 @@ td{
 .wykres{
     width: 70%;
     height: 500px;
+}
+
+.raport_button_set{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.raport_button{
+    background-color: #f8f8f8;
+    border: 2px solid #34508c;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #34508c;
+    width: 200px;
+    height: 50px;
+    margin-right: 6px;
+}
+
+.raport_button:hover{
+    background-color: #34508c;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
 }

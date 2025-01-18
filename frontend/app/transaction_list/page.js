@@ -59,8 +59,8 @@ const TransactionListPage = () => {
             <h1 className='Transaction_List_Welcom'>TransactionList</h1>
 
             <div className='transaction_list'>
-            <ul class="transaction-table">
-                <li class="table-header">
+            <ul className="transaction-table">
+                <li className="table-header">
                     <p>Store Name</p>
                     <p>Category</p>
                     <p>Amount</p>

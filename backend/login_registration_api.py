@@ -1,7 +1,11 @@
 import bcrypt
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from flask import send_file
 from backend.database import Database
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000/*"}})
@@ -113,6 +117,88 @@ def get_amount_for_category(user_email, category):
 def get_amount_from_all_transaction_except_revenue(user_email):
     amount = db.get_amount_from_all_transaction_except_revenue(user_email)
     return jsonify({'totalAmount': amount}), 200
+
+@app.route('/api/raport/<user_email>')
+def get_raport(user_email):
+    try:
+        current_dir = os.getcwd()
+        print(f"Aktualny katalog roboczy: {current_dir}")
+
+        pdf_filename = get_pdf(user_email)
+
+        if not os.path.exists(pdf_filename):
+            return jsonify({'error': f'Plik {pdf_filename} nie został znaleziony.'}), 404
+
+        return send_file(pdf_filename, as_attachment=True)
+
+    except FileNotFoundError as e:
+        return jsonify({'error': str(e)}), 500
+    except Exception as e:
+        return jsonify({'error': f'Wystąpił błąd: {str(e)}'}), 500
+
+    
+def get_pdf(user_email):
+    output_dir = os.path.abspath('./reports')
+    os.makedirs(output_dir, exist_ok=True) 
+    pdf_filename = os.path.join(output_dir, f'Use_Raport_{user_email}.pdf')
+    pdf = canvas.Canvas(pdf_filename, pagesize=letter)
+    width, height = letter
+
+    income_amount = db.get_amounts_from_transactions(user_email, 'Revenue')
+    expences_amount = db.get_amount_from_all_transaction_except_revenue(user_email)
+    balance = income_amount - expences_amount
+
+    pdf.setFont("Helvetica", 12)
+    pdf.drawString(100, height - 100, f'Income: {income_amount}')
+    pdf.drawString(100, height - 120, f'Expences: {expences_amount}')
+    pdf.drawString(100, height - 140, f'Balance: {balance}')
+
+    pdf.line(100, height - 150, 400, height - 150)
+
+    category_list = ['Maintenance', 'Clothes', 'Education', 'Hobby', 'Cosmetics', 'Children', 'Pets', 'Home', 'Insurance', 'Transport', 'Health', 'Vacation']
+    category_amount = []
+    for category in category_list:
+        amount = db.get_amounts_from_transactions(user_email, category)
+        category_amount.append({
+            'category': category,
+            'amount': amount
+        })
+    
+    data = [('Category', 'Amount'),
+            (f"{category_amount[0].get('category')}", f"{category_amount[0].get('amount')}"),
+            (f"{category_amount[1].get('category')}", f"{category_amount[1].get('amount')}"),
+            (f"{category_amount[2].get('category')}", f"{category_amount[2].get('amount')}"),
+            (f"{category_amount[3].get('category')}", f"{category_amount[3].get('amount')}"),
+            (f"{category_amount[4].get('category')}", f"{category_amount[4].get('amount')}"),
+            (f"{category_amount[5].get('category')}", f"{category_amount[5].get('amount')}"),
+            (f"{category_amount[6].get('category')}", f"{category_amount[6].get('amount')}"),
+            (f"{category_amount[7].get('category')}", f"{category_amount[7].get('amount')}"),
+            (f"{category_amount[8].get('category')}", f"{category_amount[8].get('amount')}"),
+            (f"{category_amount[9].get('category')}", f"{category_amount[9].get('amount')}"),
+            (f"{category_amount[10].get('category')}", f"{category_amount[10].get('amount')}"),
+            (f"{category_amount[11].get('category')}", f"{category_amount[11].get('amount')}")
+            ]
+
+    # data = [('Category', 'Amount')] + [
+    # (item['category'], str(item['amount'])) for item in category_amount
+    # ]
+    
+    x_start = 100
+    y_start = height - 170
+    for row in data:
+        for i, item in enumerate(row):
+            pdf.drawString(x_start + i * 100, y_start, item)
+        y_start -= 20
+
+    pdf.save()
+
+    return pdf_filename
+
+
+    
+
+    
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useEffect } from "react"
 import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
@@ -160,6 +161,11 @@ const StatisticsPage = () => {
                     <h3>Wykres Wydatków</h3>
                     <Bar data={data} options={options} />
                 </div>
+            </div>
+            <div className="raport_button_set">
+                <Link href='/generate_raport'>
+                    <button className="raport_button">Generate Raport</button>
+                </Link>
             </div>
         </div>
     )
