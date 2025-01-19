@@ -1,10 +1,12 @@
 'use client'
 import Link from 'next/link'
 import React from "react"
+import { useEffect } from 'react';
 import { useForm } from "react-hook-form"
 import { useRouter } from 'next/navigation';
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
+import io from 'socket.io-client';
 
 const schema = yup.object().shape({
     name: yup.string().required("Nazwa użytkownika jest wymagana"),
@@ -12,6 +14,8 @@ const schema = yup.object().shape({
     password: yup.string().min(6, "Hasło musi mieć co najmniej 6 znaków").required("Hasło jest wymagane"),
     confirmPassword: yup.string().oneOf([yup.ref('password'), null], 'Hasła muszą się zgadzać').required('Powtórzenie hasła jest wymagane.'),
 })
+
+const socket = io('http://localhost:8000');
 
 const RegistrationPage = () => {
     const router = useRouter()
@@ -24,8 +28,30 @@ const RegistrationPage = () => {
         resolver: yupResolver(schema),
     })
 
+    useEffect(() => {
+        console.log('Sprawdzanie połączenia z WebSocket...');
+    
+        socket.on('connect', () => {
+            console.log('Połączono z WebSocket!');
+        });
+
+        socket.on('test_event', (data) => {
+            console.log('Otrzymano testowe zdarzenie:', data);
+        });
+        
+        
+        socket.on('registration_status', (data) => {
+            console.log('Otrzymano dane:', data);
+            if (data.status === 'success') {
+              alert(data.message);
+              router.push('/login');
+            } else {
+              alert(data.message);
+            }
+        });
+    }, [])
+
     const onSubmit = (data) => {
-        alert(`Użytkownik ${data.name} został zarejestrowany!`);
         const {confirmPassword, ...filteredData} = data
         SendJsonToApi(filteredData)
         router.push('/login')

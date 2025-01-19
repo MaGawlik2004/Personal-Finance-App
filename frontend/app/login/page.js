@@ -1,14 +1,20 @@
 'use client'
 import Link from 'next/link'
 import React from "react"
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import* as yup from "yup"
+import io from 'socket.io-client';
+
 const schema = yup.object().shape({
     email: yup.string().email("Nieprawidłowy adres email").required("Email jest wymagany"),
     password: yup.string().required("Hasło jest wymagane")
 })
+
+const socket = io('http://localhost:8000');
+
 const LoginPage = () => {
     const{
         register,
@@ -19,6 +25,21 @@ const LoginPage = () => {
     })
 
     const router = useRouter(); 
+
+    useEffect (() => {
+        socket.on('connect', () => {
+            console.log('Połączono z WebSocket!');
+        });
+        
+        socket.on('login_status', (data) => {
+            if (data.status === 'success') {
+                alert(data.message)
+                router.push('/statistics');
+            } else {
+                alert(data.message)
+            }
+        });
+    }, [])
 
     const onSubmit = (data) => {
         SendJsonToApi(data)

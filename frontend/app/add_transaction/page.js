@@ -1,8 +1,10 @@
 'use client'
 
+import { useEffect } from "react";
 import React from "react"
 import { Formik, Field, Form } from "formik";
 import * as yup from 'yup'
+import io from 'socket.io-client';
 
 const schema = yup.object().shape({
     description: yup.string().required('Nazwa sklepu jest wymagana.'),
@@ -10,12 +12,25 @@ const schema = yup.object().shape({
     category: yup.string().required('Kategoria jest wymagana.'),
     date: yup.date().required('Data jest wymagana.')
 })
+
+const socket = io('http://localhost:8000');
+
 const AddTransactionPage = () => {
     const category_list = ['Revenue', 'Maintenance', 'Clothes', 'Education', 'Hobby', 'Cosmetics', 'Children', 'Pets', 'Home', 'Insurance', 'Transport', 'Health', 'Vacation']
     const onSubmit = (data) => {
-        alert(`Transakcja ${data.name} została dodana.`)
         SendJsonToApi(data)
+        resetForm();
     }
+
+    useEffect(() => {
+        socket.on('add_transaction_status', (data) => {
+            if (data.status === 'success') {
+                alert(data.message)
+            } else {
+                alert(data.message)
+            }
+        })
+    }, [])
 
     async function SendJsonToApi(data) {
         console.log("Sending data:", data)

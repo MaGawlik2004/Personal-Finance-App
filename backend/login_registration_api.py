@@ -1,5 +1,6 @@
 import bcrypt
 import os
+import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask import send_file
@@ -7,9 +8,11 @@ from flask import send_from_directory
 from backend.database import Database
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000/*"}})
+socketio = SocketIO(app, cors_allowed_origins="http://localhost:3000", logger=True, engineio_logger=True)
 
 db = Database()
 
@@ -24,6 +27,9 @@ def register_account():
     hash_password = password_hashing(data.get('password'))
     
     db.add_user(data.get('email'), data.get('name'), hash_password)
+    logging.info("Emitting registration_status event")
+    socketio.emit('registration_status', {'status': 'success', 'message': 'Account created.'}, to=None)
+    socketio.emit('test_event', {'message': 'Test Message'})
     return jsonify({'message': 'Account created.'}), 201
     
 def find_email(email = str):
@@ -38,6 +44,7 @@ def login_account():
     data = request.get_json()
 
     if find_email(data.get('email')) == False:
+        socketio.emit('login_status',{'status': 'error', 'message': 'Account with this email does not exist.'})
         return jsonify({'error': 'Account with this email dose not exist.'}), 409
 
     result = db.fetch_user_password(data.get('email'))
@@ -46,10 +53,13 @@ def login_account():
         hashed_password = result[0]
         
         if bcrypt.checkpw(data.get('password').encode('utf-8'), hashed_password.encode('utf-8')):
+            socketio.emit('login_status', {'status': 'success', 'message': 'Login successful'})
             return jsonify({'message': 'Login successful'}), 200
         else:
+            socketio.emit('login_status', {'status': 'error', 'message': 'Invalid email or password'})
             return jsonify({'error': 'Invalid email or password'}), 401
     else:
+        socketio.emit('login_status', {'status': 'error', 'message': 'Invalid email or password'})
         return jsonify({'error': 'Invalid email or password'}), 401
     
 def password_hashing(password):
@@ -64,6 +74,7 @@ def add_transaction(user_email):
     data = request.get_json()
 
     db.add_transaction(data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
+    socketio.emit('add_transaction_status', {'status': 'success', 'message': 'Transaction added successfuly.'})
     return jsonify({'message': 'Transaction Added.'}), 201
 
 @app.route('/api/user/<user_email>/transaction', methods = ['GET'])
@@ -93,6 +104,7 @@ def delete_transaction(user_email, transaction_id):
         return jsonify({'error': 'Transaction not found or does not belong to the user.'}), 404
     
     db.delete_transaction(transaction_id, user_email)
+    socketio.emit('delete_transaction_status', {'status': 'success', 'message': 'Transaction deleted successfuly.'})
     return jsonify({'message': 'Transaction deleted successfully.'}), 200
 
 @app.route('/api/user/<user_email>/transaction/<transaction_id>', methods = ['GET'])
@@ -107,6 +119,7 @@ def get_transaction_by_id(user_email, transaction_id):
 def update_transaction(user_email, transaction_id):
     data = request.get_json()
     db.update_transaction(transaction_id, data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
+    socketio.emit('update_transaction_status', {'status': 'success', 'message': 'Transaction updated successfuly.'})
     return jsonify({'message': 'Transaction updated'}), 200
 
 @app.route('/api/user/<user_email>/transaction/category/<category>', methods = ['GET'])
@@ -195,12 +208,5 @@ def serve_report(filename):
     reports_dir = os.path.abspath('./reports')
     return send_from_directory(reports_dir, filename)
 
-
-
-    
-
-    
-
-
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8000)
+     socketio.run(app, host='0.0.0.0', port=8000, debug=True)

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { useParams } from 'next/navigation';
 import { Formik, Field, Form } from 'formik';
 import * as yup from 'yup';
+import io from 'socket.io-client';
 
 const validationSchema = yup.object().shape({
     description: yup.string().required('Opis jest wymagany.'),
@@ -12,6 +13,8 @@ const validationSchema = yup.object().shape({
     amount: yup.number().required('Kwota jest wymagana.').positive('Kwota musi być większa od zera.'),
     date: yup.date().required('Data jest wymagana.'),
 });
+
+const socket = io('http://localhost:8000');
 
 const EditTransactionPage = () => {
     const { id } = useParams()
@@ -22,6 +25,17 @@ const EditTransactionPage = () => {
         category: '',
         amount: '',
         date: '',
+    })
+
+    useEffect(() => {
+        socket.on('update_transaction_status', (data) => {
+            if (data.status === 'success') {
+                alert(data.message)
+                router.push('/transaction_list');
+            } else {
+                alert(data.message)
+            }
+        })
     })
 
     useEffect(() => {
@@ -68,9 +82,6 @@ const EditTransactionPage = () => {
 
             const result = await response.json();
             console.log('Zaktualizowano transakcję:', result);
-
-            alert('Transakcja została zaktualizowana.');
-            router.push('/transaction_list');
         } catch (error) {
             console.error('Błąd podczas aktualizacji transakcji:', error);
         }

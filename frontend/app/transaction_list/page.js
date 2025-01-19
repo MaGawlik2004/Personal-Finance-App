@@ -2,10 +2,23 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:8000');
 
 const TransactionListPage = () => {
     const [allTransactions, setAllTransactions] = useState([])
     const email = sessionStorage.getItem('email')
+
+    useEffect(() => {
+        socket.on('delete_transaction_status', (data) => {
+            if (data.status === 'success') {
+                alert(data.message)
+            } else {
+                alert(data.message)
+            }
+        })
+    })
 
     useEffect(() => {
         const fetchTransactions = async () => {
@@ -49,7 +62,6 @@ const TransactionListPage = () => {
                 prevTransactions.filter((transaction) => transaction.id !== transaction_id)
             );
 
-            alert(`Transakcja została usunięta.`);
         } catch (error) {
             console.error('Błąd podczas usuwania transakcji:', error);
         }
@@ -73,7 +85,7 @@ const TransactionListPage = () => {
                         <p>{transaction.category}</p>
                         <p>{transaction.amount}</p>
                         <p>{transaction.date}</p>
-                        <div class="actions">
+                        <div className="actions">
                             <button onClick={() => handleDelete(transaction.id)}>Delete</button>
                             <Link href={`/transaction_list/${transaction.id}`}>
                                 <button>Edit</button>
