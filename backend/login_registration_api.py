@@ -3,6 +3,7 @@ import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask import send_file
+from flask import send_from_directory
 from backend.database import Database
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
@@ -118,24 +119,21 @@ def get_amount_from_all_transaction_except_revenue(user_email):
     amount = db.get_amount_from_all_transaction_except_revenue(user_email)
     return jsonify({'totalAmount': amount}), 200
 
-@app.route('/api/raport/<user_email>')
+@app.route('/api/raport/<user_email>', methods = ['GET'])
 def get_raport(user_email):
     try:
-        current_dir = os.getcwd()
-        print(f"Aktualny katalog roboczy: {current_dir}")
-
         pdf_filename = get_pdf(user_email)
 
         if not os.path.exists(pdf_filename):
             return jsonify({'error': f'Plik {pdf_filename} nie został znaleziony.'}), 404
 
-        return send_file(pdf_filename, as_attachment=True)
+        file_url = f"http://localhost:8000/reports/{os.path.basename(pdf_filename)}"
+        return jsonify({'file_url': file_url}), 200
 
     except FileNotFoundError as e:
         return jsonify({'error': str(e)}), 500
     except Exception as e:
         return jsonify({'error': f'Wystąpił błąd: {str(e)}'}), 500
-
     
 def get_pdf(user_email):
     output_dir = os.path.abspath('./reports')
@@ -178,10 +176,6 @@ def get_pdf(user_email):
             (f"{category_amount[10].get('category')}", f"{category_amount[10].get('amount')}"),
             (f"{category_amount[11].get('category')}", f"{category_amount[11].get('amount')}")
             ]
-
-    # data = [('Category', 'Amount')] + [
-    # (item['category'], str(item['amount'])) for item in category_amount
-    # ]
     
     x_start = 100
     y_start = height - 170
@@ -193,6 +187,14 @@ def get_pdf(user_email):
     pdf.save()
 
     return pdf_filename
+
+from flask import send_from_directory
+
+@app.route('/reports/<filename>', methods=['GET'])
+def serve_report(filename):
+    reports_dir = os.path.abspath('./reports')
+    return send_from_directory(reports_dir, filename)
+
 
 
     
