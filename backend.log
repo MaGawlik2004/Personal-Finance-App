@@ -1,0 +1,100 @@
+2025-01-31 11:12:09,593 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.17.233:8000
+2025-01-31 11:12:09,593 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 11:12:09,593 - INFO -  * Restarting with stat
+2025-01-31 11:12:09,722 - WARNING -  * Debugger is active!
+2025-01-31 11:12:09,726 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 11:12:21,036 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.17.233:8000
+2025-01-31 11:12:21,036 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 11:12:21,036 - INFO -  * Restarting with stat
+2025-01-31 11:12:21,165 - WARNING -  * Debugger is active!
+2025-01-31 11:12:21,168 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 11:12:34,520 - INFO - tAcxUvWxuu5yjJzhAAAA: Sending packet OPEN data {'sid': 'tAcxUvWxuu5yjJzhAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 11:12:34,520 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:34] "GET /socket.io/?EIO=4&transport=polling&t=lv6mtp8j HTTP/1.1" 200 -
+2025-01-31 11:12:34,528 - INFO - tAcxUvWxuu5yjJzhAAAA: Received packet MESSAGE data 0
+2025-01-31 11:12:34,528 - INFO - tAcxUvWxuu5yjJzhAAAA: Sending packet MESSAGE data 0{"sid":"LnipeFC8t2BghgEBAAAB"}
+2025-01-31 11:12:34,528 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:34] "GET /socket.io/?EIO=4&transport=polling&t=lv6n1e9i&sid=tAcxUvWxuu5yjJzhAAAA HTTP/1.1" 200 -
+2025-01-31 11:12:34,529 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:34] "POST /socket.io/?EIO=4&transport=polling&t=lv6n10up&sid=tAcxUvWxuu5yjJzhAAAA HTTP/1.1" 200 -
+2025-01-31 11:12:34,528 - INFO - tAcxUvWxuu5yjJzhAAAA: Received request to upgrade to websocket
+2025-01-31 11:12:34,531 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:34] "GET /socket.io/?EIO=4&transport=polling&t=lv6n6ekb&sid=tAcxUvWxuu5yjJzhAAAA HTTP/1.1" 200 -
+2025-01-31 11:12:34,532 - INFO - tAcxUvWxuu5yjJzhAAAA: Upgrade to websocket successful
+2025-01-31 11:12:49,924 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:49] "OPTIONS /api/user/register HTTP/1.1" 200 -
+2025-01-31 11:12:49,943 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:49] "[35m[1mPUT /api/user/register HTTP/1.1[0m" 500 -
+2025-01-31 11:12:50,006 - INFO - V2FSl62mEythNpNBAAAC: Sending packet OPEN data {'sid': 'V2FSl62mEythNpNBAAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 11:12:50,006 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:50] "GET /socket.io/?EIO=4&transport=polling&t=lvil1bwk HTTP/1.1" 200 -
+2025-01-31 11:12:50,015 - INFO - V2FSl62mEythNpNBAAAC: Received packet MESSAGE data 0
+2025-01-31 11:12:50,016 - INFO - V2FSl62mEythNpNBAAAC: Sending packet MESSAGE data 0{"sid":"cwcxWPfNGvp5eQhFAAAD"}
+2025-01-31 11:12:50,017 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:50] "GET /socket.io/?EIO=4&transport=polling&t=lvil62fb&sid=V2FSl62mEythNpNBAAAC HTTP/1.1" 200 -
+2025-01-31 11:12:50,017 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:50] "POST /socket.io/?EIO=4&transport=polling&t=lvil64aw&sid=V2FSl62mEythNpNBAAAC HTTP/1.1" 200 -
+2025-01-31 11:12:50,016 - INFO - V2FSl62mEythNpNBAAAC: Received request to upgrade to websocket
+2025-01-31 11:12:50,019 - INFO - 127.0.0.1 - - [31/Jan/2025 11:12:50] "GET /socket.io/?EIO=4&transport=polling&t=lvilegan&sid=V2FSl62mEythNpNBAAAC HTTP/1.1" 200 -
+2025-01-31 11:12:50,019 - INFO - V2FSl62mEythNpNBAAAC: Upgrade to websocket successful
+2025-01-31 11:12:59,525 - INFO - tAcxUvWxuu5yjJzhAAAA: Sending packet PING data None
+2025-01-31 11:12:59,528 - INFO - tAcxUvWxuu5yjJzhAAAA: Received packet PONG data 
+2025-01-31 11:13:15,012 - INFO - V2FSl62mEythNpNBAAAC: Sending packet PING data None
+2025-01-31 11:13:15,013 - INFO - V2FSl62mEythNpNBAAAC: Received packet PONG data 
+2025-01-31 11:13:24,530 - INFO - tAcxUvWxuu5yjJzhAAAA: Sending packet PING data None
+2025-01-31 11:13:24,532 - INFO - tAcxUvWxuu5yjJzhAAAA: Received packet PONG data 
+2025-01-31 11:13:40,019 - INFO - V2FSl62mEythNpNBAAAC: Sending packet PING data None
+2025-01-31 11:13:40,021 - INFO - V2FSl62mEythNpNBAAAC: Received packet PONG data 
+2025-01-31 11:13:44,335 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 11:13:44,373 - INFO -  * Restarting with stat
+2025-01-31 11:13:44,595 - WARNING -  * Debugger is active!
+2025-01-31 11:13:44,599 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 11:13:45,110 - INFO - LE_jdtK19s91NJJ-AAAA: Sending packet OPEN data {'sid': 'LE_jdtK19s91NJJ-AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 11:13:45,110 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:45] "GET /socket.io/?EIO=4&transport=polling&t=lwp3lpjx HTTP/1.1" 200 -
+2025-01-31 11:13:45,115 - INFO - LE_jdtK19s91NJJ-AAAA: Received packet MESSAGE data 0
+2025-01-31 11:13:45,115 - INFO - LE_jdtK19s91NJJ-AAAA: Received request to upgrade to websocket
+2025-01-31 11:13:45,116 - INFO - LE_jdtK19s91NJJ-AAAA: Sending packet MESSAGE data 0{"sid":"QzdXrkiFn06tAQlvAAAB"}
+2025-01-31 11:13:45,117 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:45] "GET /socket.io/?EIO=4&transport=polling&t=lwp3um00&sid=LE_jdtK19s91NJJ-AAAA HTTP/1.1" 200 -
+2025-01-31 11:13:45,119 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:45] "POST /socket.io/?EIO=4&transport=polling&t=lwp3tra7&sid=LE_jdtK19s91NJJ-AAAA HTTP/1.1" 200 -
+2025-01-31 11:13:45,122 - INFO - LE_jdtK19s91NJJ-AAAA: Upgrade to websocket successful
+2025-01-31 11:13:45,760 - INFO - EyrvxncT44AyiY3qAAAC: Sending packet OPEN data {'sid': 'EyrvxncT44AyiY3qAAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 11:13:45,761 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:45] "GET /socket.io/?EIO=4&transport=polling&t=lwploxb2 HTTP/1.1" 200 -
+2025-01-31 11:13:45,767 - INFO - EyrvxncT44AyiY3qAAAC: Received packet MESSAGE data 0
+2025-01-31 11:13:45,768 - INFO - EyrvxncT44AyiY3qAAAC: Received request to upgrade to websocket
+2025-01-31 11:13:45,769 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:45] "GET /socket.io/?EIO=4&transport=polling&t=lwplvztd&sid=EyrvxncT44AyiY3qAAAC HTTP/1.1" 200 -
+2025-01-31 11:13:45,768 - INFO - EyrvxncT44AyiY3qAAAC: Sending packet MESSAGE data 0{"sid":"CaoP5nPqPL4GdE8JAAAD"}
+2025-01-31 11:13:45,771 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:45] "POST /socket.io/?EIO=4&transport=polling&t=lwplva1x&sid=EyrvxncT44AyiY3qAAAC HTTP/1.1" 200 -
+2025-01-31 11:13:45,774 - INFO - EyrvxncT44AyiY3qAAAC: Upgrade to websocket successful
+2025-01-31 11:13:48,621 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:48] "GET /socket.io/?EIO=4&transport=websocket&sid=LE_jdtK19s91NJJ-AAAA HTTP/1.1" 200 -
+2025-01-31 11:13:48,622 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:48] "GET /socket.io/?EIO=4&transport=websocket&sid=EyrvxncT44AyiY3qAAAC HTTP/1.1" 200 -
+2025-01-31 11:13:50,556 - INFO - TqpsYtpqqzPeeGMOAAAE: Sending packet OPEN data {'sid': 'TqpsYtpqqzPeeGMOAAAE', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 11:13:50,556 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:50] "GET /socket.io/?EIO=4&transport=polling&t=lwtaz69i HTTP/1.1" 200 -
+2025-01-31 11:13:50,565 - INFO - TqpsYtpqqzPeeGMOAAAE: Received packet MESSAGE data 0
+2025-01-31 11:13:50,567 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:50] "GET /socket.io/?EIO=4&transport=polling&t=lwtb76bf&sid=TqpsYtpqqzPeeGMOAAAE HTTP/1.1" 200 -
+2025-01-31 11:13:50,566 - INFO - TqpsYtpqqzPeeGMOAAAE: Sending packet MESSAGE data 0{"sid":"mgmBYVSgdwuSZF-SAAAF"}
+2025-01-31 11:13:50,567 - INFO - TqpsYtpqqzPeeGMOAAAE: Received request to upgrade to websocket
+2025-01-31 11:13:50,567 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:50] "POST /socket.io/?EIO=4&transport=polling&t=lwtb6vim&sid=TqpsYtpqqzPeeGMOAAAE HTTP/1.1" 200 -
+2025-01-31 11:13:50,569 - INFO - 127.0.0.1 - - [31/Jan/2025 11:13:50] "GET /socket.io/?EIO=4&transport=polling&t=lwtbbkku&sid=TqpsYtpqqzPeeGMOAAAE HTTP/1.1" 200 -
+2025-01-31 11:13:50,570 - INFO - TqpsYtpqqzPeeGMOAAAE: Upgrade to websocket successful
+2025-01-31 11:14:04,516 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:04] "OPTIONS /api/user/register HTTP/1.1" 200 -
+2025-01-31 11:14:04,518 - INFO - PUT request from the address 127.0.0.1
+2025-01-31 11:14:04,572 - INFO - b6fNAet99bQ47mAzAAAG: Sending packet OPEN data {'sid': 'b6fNAet99bQ47mAzAAAG', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 11:14:04,572 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:04] "GET /socket.io/?EIO=4&transport=polling&t=lx447exo HTTP/1.1" 200 -
+2025-01-31 11:14:04,578 - INFO - b6fNAet99bQ47mAzAAAG: Received packet MESSAGE data 0
+2025-01-31 11:14:04,579 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:04] "GET /socket.io/?EIO=4&transport=polling&t=lx44g0fz&sid=b6fNAet99bQ47mAzAAAG HTTP/1.1" 200 -
+2025-01-31 11:14:04,579 - INFO - b6fNAet99bQ47mAzAAAG: Sending packet MESSAGE data 0{"sid":"0ioPkyYp9Kd1iaWrAAAH"}
+2025-01-31 11:14:04,579 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:04] "POST /socket.io/?EIO=4&transport=polling&t=lx44fxr4&sid=b6fNAet99bQ47mAzAAAG HTTP/1.1" 200 -
+2025-01-31 11:14:04,579 - INFO - b6fNAet99bQ47mAzAAAG: Received request to upgrade to websocket
+2025-01-31 11:14:04,581 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:04] "GET /socket.io/?EIO=4&transport=polling&t=lx44k7pd&sid=b6fNAet99bQ47mAzAAAG HTTP/1.1" 200 -
+2025-01-31 11:14:04,582 - INFO - b6fNAet99bQ47mAzAAAG: Upgrade to websocket successful
+2025-01-31 11:14:04,740 - INFO - emitting event "registration_status" to all [/]
+2025-01-31 11:14:04,741 - INFO - TqpsYtpqqzPeeGMOAAAE: Sending packet MESSAGE data 2["registration_status",{"status":"success","message":"Account created."}]
+2025-01-31 11:14:04,741 - INFO - b6fNAet99bQ47mAzAAAG: Sending packet MESSAGE data 2["registration_status",{"status":"success","message":"Account created."}]
+2025-01-31 11:14:04,741 - INFO - emitting event "test_event" to all [/]
+2025-01-31 11:14:04,741 - INFO - TqpsYtpqqzPeeGMOAAAE: Sending packet MESSAGE data 2["test_event",{"message":"Test Message"}]
+2025-01-31 11:14:04,741 - INFO - b6fNAet99bQ47mAzAAAG: Sending packet MESSAGE data 2["test_event",{"message":"Test Message"}]
+2025-01-31 11:14:04,741 - INFO - User registration with email test191@app.com was successful.
+2025-01-31 11:14:04,741 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:04] "[35m[1mPUT /api/user/register HTTP/1.1[0m" 201 -
+2025-01-31 11:14:15,562 - INFO - TqpsYtpqqzPeeGMOAAAE: Sending packet PING data None
+2025-01-31 11:14:15,563 - INFO - TqpsYtpqqzPeeGMOAAAE: Received packet PONG data 
+2025-01-31 11:14:29,577 - INFO - b6fNAet99bQ47mAzAAAG: Sending packet PING data None
+2025-01-31 11:14:29,579 - INFO - b6fNAet99bQ47mAzAAAG: Received packet PONG data 
+2025-01-31 11:14:36,345 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:36] "GET /socket.io/?EIO=4&transport=websocket&sid=b6fNAet99bQ47mAzAAAG HTTP/1.1" 200 -
+2025-01-31 11:14:36,345 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:36] "GET /socket.io/?EIO=4&transport=websocket&sid=TqpsYtpqqzPeeGMOAAAE HTTP/1.1" 200 -
