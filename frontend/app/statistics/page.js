@@ -37,7 +37,7 @@ const StatisticsPage = () => {
         }
 
         fetchAmounts()
-    }, [email]) // Dodanie `email` jako zależności, aby uniknąć błędów
+    }, [email])
 
     useEffect(() => {
         const fetchAllCosts = async () => {
@@ -79,15 +79,12 @@ const StatisticsPage = () => {
         fetchRevenue()
     }, [email])
 
-    const categories = amountsByCategory.map(item => item.category)
-    const amounts = amountsByCategory.map(item => item.totalAmount)
-
     const data = {
-        labels: amountsByCategory.map(item => item.category), // Categories as labels
+        labels: amountsByCategory.map(item => item.category), 
         datasets: [
             {
-                label: 'Wydatki',
-                data: amountsByCategory.map(item => item.totalAmount), // Total amount for each category
+                label: 'Expenses',
+                data: amountsByCategory.map(item => item.totalAmount), 
                 backgroundColor: amountsByCategory.map(item => item.category === 'Revenue' ? 'rgba(75, 192, 192, 0.2)' : 'rgba(255, 99, 132, 0.2)'),
                 borderColor: amountsByCategory.map(item => item.category === 'Revenue' ? 'rgba(75, 192, 192, 1)' : 'rgba(255, 99, 132, 1)'),
                 borderWidth: 1,
@@ -95,13 +92,12 @@ const StatisticsPage = () => {
         ],
     }
 
-    // Configuration options for the chart
     const options = {
         responsive: true,
         plugins: {
             title: {
                 display: true,
-                text: 'Wydatki i Przychody',
+                text: 'Expenses and Income',
             },
             tooltip: {
                 callbacks: {
@@ -115,13 +111,13 @@ const StatisticsPage = () => {
             x: {
                 title: {
                     display: true,
-                    text: 'Kategorie'
+                    text: 'Categories'
                 }
             },
             y: {
                 title: {
                     display: true,
-                    text: 'Kwota (PLN)'
+                    text: 'Amount (PLN)'
                 }
             }
         }
@@ -158,7 +154,7 @@ const StatisticsPage = () => {
                 </table>
 
                 <div className="wykres">
-                    <h3>Wykres Wydatków</h3>
+                    <h3>Expenses Chart</h3>
                     <Bar data={data} options={options} />
                 </div>
             </div>

@@ -32,18 +32,20 @@ const GenerateRaportPage = () => {
     }
 
     return (
-        <div>
-            <h1>Generate Raport Page</h1>
-            <button onClick={handleGenerateRaport}>Generate Raport</button>
+        <div className="generateRaportPage">
+            <h1 className="Welcom_generate">Generate Raport Page</h1>
             {reportLink && (
-                <div>
+                <div className="Link">
                     <p>Twój raport został wygenerowany:</p>
                     <a href={reportLink} target="_blank" rel="noopener noreferrer">Pobierz raport</a>
                 </div>
             )}
-            <Link href='/statistics'>
-                <button>Cancel</button> 
-            </Link>
+            <div className="generate_raport_button_layout">
+                <button onClick={handleGenerateRaport} className="generate_raport_button">Generate Raport</button>
+                <Link href='/statistics'>
+                    <button className="go_back_button">Cancel</button> 
+                </Link>
+            </div>
         </div>
     )
 }

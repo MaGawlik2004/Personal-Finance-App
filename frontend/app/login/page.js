@@ -9,8 +9,8 @@ import* as yup from "yup"
 import io from 'socket.io-client';
 
 const schema = yup.object().shape({
-    email: yup.string().email("Nieprawidłowy adres email").required("Email jest wymagany"),
-    password: yup.string().required("Hasło jest wymagane")
+    email: yup.string().email("Invalid email address.").required("Email is required."),
+    password: yup.string().required("Password is required.")
 })
 
 const socket = io('http://localhost:8000');
@@ -28,7 +28,7 @@ const LoginPage = () => {
 
     useEffect (() => {
         socket.on('connect', () => {
-            console.log('Połączono z WebSocket!');
+            console.log('Connected to WebSocket!');
         });
         
         socket.on('login_status', (data) => {
@@ -66,7 +66,7 @@ const LoginPage = () => {
                 router.push('/statistics')
             } else {
                 console.log(result)
-                console.log("Błąd rejestracji:", result.message)
+                console.log("Registration error:", result.message)
             }
 
         } catch (error) {

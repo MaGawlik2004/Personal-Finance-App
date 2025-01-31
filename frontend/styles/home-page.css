@@ -62,11 +62,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
-    /* width: 1555px; */
+    min-height: 100vh;
 }
 
 .Home-Page{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;

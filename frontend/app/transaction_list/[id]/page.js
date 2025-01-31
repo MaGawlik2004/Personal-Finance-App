@@ -8,10 +8,10 @@ import * as yup from 'yup';
 import io from 'socket.io-client';
 
 const validationSchema = yup.object().shape({
-    description: yup.string().required('Opis jest wymagany.'),
-    category: yup.string().required('Kategoria jest wymagana.'),
-    amount: yup.number().required('Kwota jest wymagana.').positive('Kwota musi być większa od zera.'),
-    date: yup.date().required('Data jest wymagana.'),
+    description: yup.string().required('Description is required.'),
+    category: yup.string().required('Category is required.'),
+    amount: yup.number().required('Amount is required.').positive('The amount must be greater than zero.'),
+    date: yup.date().required('The date is required.'),
 });
 
 const socket = io('http://localhost:8000');
@@ -45,19 +45,19 @@ const EditTransactionPage = () => {
                 const response = await fetch(apiURL)
    
                 if (!response.ok) {
-                    throw new Error(`Błąd HTTP: ${response.status}`)
+                    throw new Error(`HTTP error: ${response.status}`)
                 }
    
                 const data = await response.json()
-                console.log("Otrzymane dane transakcji:", data);  // Logowanie danych
+                console.log("Received transaction data:", data);
    
                 if (data) {
                     setTransactionData(data)
                 } else {
-                    alert("Transakcja nie została znaleziona.");
+                    alert("Transaction not found.");
                 }
             } catch (error) {
-                console.error('Błąd podczas pobierania danych transakcji:', error)
+                console.error('Error while fetching transaction data:', error)
             }
         }
         fetchTransaction()
@@ -77,13 +77,13 @@ const EditTransactionPage = () => {
             });
 
             if (!response.ok) {
-                throw new Error(`Błąd HTTP: ${response.status}`);
+                throw new Error(`HTTP error: ${response.status}`);
             }
 
             const result = await response.json();
-            console.log('Zaktualizowano transakcję:', result);
+            console.log('Transaction updated:', result);
         } catch (error) {
-            console.error('Błąd podczas aktualizacji transakcji:', error);
+            console.error('Error while fetching transaction data:', error);
         }
     };
 
@@ -96,7 +96,7 @@ const EditTransactionPage = () => {
     
     return (
         <div className="Add_Transaction_Page">
-            <h1 className="add_transaction_page_welcome">Edytuj Transakcję</h1>
+            <h1 className="add_transaction_page_welcome">Edit Transaction</h1>
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}

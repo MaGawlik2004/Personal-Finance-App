@@ -28,14 +28,14 @@ const TransactionListPage = () => {
                 const response = await fetch(apiURL)
 
                 if (!response.ok) {
-                    throw new Error(`Błąd HTTP: ${response.status}`)
+                    throw new Error(`HTTP error: ${response.status}`)
                 }
                 const data = await response.json()
 
-                console.log("Odpowiedź z API:", data)
+                console.log("API response:", data)
                 setAllTransactions(data)
             } catch (error) {
-                console.error("Błąd podczas pobierania danych:", error);
+                console.error("Error while fetching data:", error);
             }
         }
 
@@ -63,7 +63,7 @@ const TransactionListPage = () => {
             );
 
         } catch (error) {
-            console.error('Błąd podczas usuwania transakcji:', error);
+            console.error('Error while deleting transaction:', error);
         }
     };
     return(

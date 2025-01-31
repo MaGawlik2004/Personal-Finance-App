@@ -7,10 +7,10 @@ import * as yup from 'yup'
 import io from 'socket.io-client';
 
 const schema = yup.object().shape({
-    description: yup.string().required('Nazwa sklepu jest wymagana.'),
-    amount: yup.number().required("Kwota jest wymagana.").positive("Kwota musi być większa od zera."),
-    category: yup.string().required('Kategoria jest wymagana.'),
-    date: yup.date().required('Data jest wymagana.')
+    description: yup.string().required('The store name is required.'),
+    amount: yup.number().required("The amount is required.").positive("The amount must be greater than zero."),
+    category: yup.string().required('The category is required.'),
+    date: yup.date().required('The date is required.')
 })
 
 const socket = io('http://localhost:8000');

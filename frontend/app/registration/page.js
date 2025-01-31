@@ -9,10 +9,10 @@ import * as yup from "yup"
 import io from 'socket.io-client';
 
 const schema = yup.object().shape({
-    name: yup.string().required("Nazwa użytkownika jest wymagana"),
-    email: yup.string().email("Nieprawidłowy adres email").required("Email jest wymagany"),
-    password: yup.string().min(6, "Hasło musi mieć co najmniej 6 znaków").required("Hasło jest wymagane"),
-    confirmPassword: yup.string().oneOf([yup.ref('password'), null], 'Hasła muszą się zgadzać').required('Powtórzenie hasła jest wymagane.'),
+    name: yup.string().required("Username is required."),
+    email: yup.string().email("Invalid email address.").required("Email is required."),
+    password: yup.string().min(6, "The password must be at least 6 characters long.").required("Password is required."),
+    confirmPassword: yup.string().oneOf([yup.ref('password'), null], 'Passwords must match.').required('Password confirmation is required.'),
 })
 
 const socket = io('http://localhost:8000');
@@ -29,19 +29,19 @@ const RegistrationPage = () => {
     })
 
     useEffect(() => {
-        console.log('Sprawdzanie połączenia z WebSocket...');
+        console.log('Checking WebSocket connection...');
     
         socket.on('connect', () => {
-            console.log('Połączono z WebSocket!');
+            console.log('Connected to WebSocket!');
         });
 
         socket.on('test_event', (data) => {
-            console.log('Otrzymano testowe zdarzenie:', data);
+            console.log('Received test event:', data);
         });
         
         
         socket.on('registration_status', (data) => {
-            console.log('Otrzymano dane:', data);
+            console.log('Received data:', data);
             if (data.status === 'success') {
               alert(data.message);
               router.push('/login');
