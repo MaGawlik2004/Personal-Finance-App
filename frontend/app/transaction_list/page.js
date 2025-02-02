@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:8000');
+const socket = io('https://localhost:8000');
 
 const TransactionListPage = () => {
     const [allTransactions, setAllTransactions] = useState([])
@@ -24,7 +24,7 @@ const TransactionListPage = () => {
         const fetchTransactions = async () => {
 
             try {
-                const apiURL = `http://localhost:8000/api/user/${email}/transaction`
+                const apiURL = `https://localhost:8000/api/user/${email}/transaction`
                 const response = await fetch(apiURL)
 
                 if (!response.ok) {
@@ -44,7 +44,7 @@ const TransactionListPage = () => {
 
     const handleDelete = async (transaction_id) => {
         try {
-            const response = await fetch(`http://localhost:8000/api/user/${email}/transaction/${transaction_id}`, {
+            const response = await fetch(`https://localhost:8000/api/user/${email}/transaction/${transaction_id}`, {
                 method: "DELETE",
                 headers: {
                     'Content-Type': 'application/json',

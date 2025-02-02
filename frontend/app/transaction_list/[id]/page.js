@@ -14,7 +14,7 @@ const validationSchema = yup.object().shape({
     date: yup.date().required('The date is required.'),
 });
 
-const socket = io('http://localhost:8000');
+const socket = io('https://localhost:8000');
 
 const EditTransactionPage = () => {
     const { id } = useParams()
@@ -41,7 +41,7 @@ const EditTransactionPage = () => {
     useEffect(() => {
         const fetchTransaction = async () => {
             try {
-                const apiURL = `http://localhost:8000/api/user/${email}/transaction/${id}`
+                const apiURL = `https://localhost:8000/api/user/${email}/transaction/${id}`
                 const response = await fetch(apiURL)
    
                 if (!response.ok) {
@@ -68,7 +68,7 @@ const EditTransactionPage = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch(`http://localhost:8000/api/user/${email}/transaction/${id}`, {
+            const response = await fetch(`https://localhost:8000/api/user/${email}/transaction/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

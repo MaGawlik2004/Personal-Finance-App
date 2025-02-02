@@ -98,3 +98,1132 @@
 2025-01-31 11:14:29,579 - INFO - b6fNAet99bQ47mAzAAAG: Received packet PONG data 
 2025-01-31 11:14:36,345 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:36] "GET /socket.io/?EIO=4&transport=websocket&sid=b6fNAet99bQ47mAzAAAG HTTP/1.1" 200 -
 2025-01-31 11:14:36,345 - INFO - 127.0.0.1 - - [31/Jan/2025 11:14:36] "GET /socket.io/?EIO=4&transport=websocket&sid=TqpsYtpqqzPeeGMOAAAE HTTP/1.1" 200 -
+2025-01-31 15:08:48,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://127.0.0.1:8000
+2025-01-31 15:08:48,752 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 15:08:48,752 - INFO -  * Restarting with stat
+2025-01-31 15:08:48,879 - WARNING -  * Debugger is active!
+2025-01-31 15:08:48,883 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 15:31:30,261 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.231.17.233:8000
+2025-01-31 15:31:30,261 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 15:31:30,261 - INFO -  * Restarting with stat
+2025-01-31 15:31:30,388 - WARNING -  * Debugger is active!
+2025-01-31 15:31:30,392 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 15:32:21,097 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet OPEN data {'sid': 'wl5i8vWqGQXLuwVRAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:32:21,097 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:21] "GET /socket.io/?EIO=4&transport=polling&t=v59bbzue HTTP/1.1" 200 -
+2025-01-31 15:32:21,107 - INFO - wl5i8vWqGQXLuwVRAAAA: Received packet MESSAGE data 0
+2025-01-31 15:32:21,108 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet MESSAGE data 0{"sid":"ikXpSj9outiSbjtyAAAB"}
+2025-01-31 15:32:21,108 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:21] "GET /socket.io/?EIO=4&transport=polling&t=v59biz9s&sid=wl5i8vWqGQXLuwVRAAAA HTTP/1.1" 200 -
+2025-01-31 15:32:21,108 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:21] "POST /socket.io/?EIO=4&transport=polling&t=v59bikth&sid=wl5i8vWqGQXLuwVRAAAA HTTP/1.1" 200 -
+2025-01-31 15:32:21,108 - INFO - wl5i8vWqGQXLuwVRAAAA: Received request to upgrade to websocket
+2025-01-31 15:32:21,111 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:21] "GET /socket.io/?EIO=4&transport=polling&t=v59bqu9o&sid=wl5i8vWqGQXLuwVRAAAA HTTP/1.1" 200 -
+2025-01-31 15:32:21,111 - INFO - wl5i8vWqGQXLuwVRAAAA: Upgrade to websocket successful
+2025-01-31 15:32:41,129 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:41] "OPTIONS /api/user/register HTTP/1.1" 200 -
+2025-01-31 15:32:41,132 - INFO - PUT request from the address 127.0.0.1
+2025-01-31 15:32:41,349 - INFO - emitting event "registration_status" to all [/]
+2025-01-31 15:32:41,349 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet MESSAGE data 2["registration_status",{"status":"success","message":"Account created."}]
+2025-01-31 15:32:41,349 - INFO - emitting event "test_event" to all [/]
+2025-01-31 15:32:41,350 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet MESSAGE data 2["test_event",{"message":"Test Message"}]
+2025-01-31 15:32:41,350 - INFO - User registration with email test1511@app.pl was successful.
+2025-01-31 15:32:41,350 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:41] "[35m[1mPUT /api/user/register HTTP/1.1[0m" 201 -
+2025-01-31 15:32:46,102 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet PING data None
+2025-01-31 15:32:49,408 - INFO - wl5i8vWqGQXLuwVRAAAA: Received packet PONG data 
+2025-01-31 15:32:49,470 - INFO - Wgf-BNWYFcjdGX8sAAAC: Sending packet OPEN data {'sid': 'Wgf-BNWYFcjdGX8sAAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:32:49,470 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:49] "GET /socket.io/?EIO=4&transport=polling&t=v5v7hzia HTTP/1.1" 200 -
+2025-01-31 15:32:49,478 - INFO - Wgf-BNWYFcjdGX8sAAAC: Received packet MESSAGE data 0
+2025-01-31 15:32:49,478 - INFO - Wgf-BNWYFcjdGX8sAAAC: Sending packet MESSAGE data 0{"sid":"502sSWJcoXuwcUqbAAAD"}
+2025-01-31 15:32:49,479 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:49] "POST /socket.io/?EIO=4&transport=polling&t=v5v7mthe&sid=Wgf-BNWYFcjdGX8sAAAC HTTP/1.1" 200 -
+2025-01-31 15:32:49,479 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:49] "GET /socket.io/?EIO=4&transport=polling&t=v5v7mjxj&sid=Wgf-BNWYFcjdGX8sAAAC HTTP/1.1" 200 -
+2025-01-31 15:32:49,479 - INFO - Wgf-BNWYFcjdGX8sAAAC: Received request to upgrade to websocket
+2025-01-31 15:32:49,482 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:49] "GET /socket.io/?EIO=4&transport=polling&t=v5v7tjic&sid=Wgf-BNWYFcjdGX8sAAAC HTTP/1.1" 200 -
+2025-01-31 15:32:49,483 - INFO - Wgf-BNWYFcjdGX8sAAAC: Upgrade to websocket successful
+2025-01-31 15:32:59,271 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:59] "OPTIONS /api/user/login HTTP/1.1" 200 -
+2025-01-31 15:32:59,290 - INFO - 127.0.0.1 - - [31/Jan/2025 15:32:59] "[35m[1mPOST /api/user/login HTTP/1.1[0m" 500 -
+2025-01-31 15:33:12,735 - INFO - 127.0.0.1 - - [31/Jan/2025 15:33:12] "OPTIONS /api/user/login HTTP/1.1" 200 -
+2025-01-31 15:33:12,747 - INFO - 127.0.0.1 - - [31/Jan/2025 15:33:12] "[35m[1mPOST /api/user/login HTTP/1.1[0m" 500 -
+2025-01-31 15:33:13,760 - INFO - 127.0.0.1 - - [31/Jan/2025 15:33:13] "[35m[1mPOST /api/user/login HTTP/1.1[0m" 500 -
+2025-01-31 15:33:14,411 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet PING data None
+2025-01-31 15:33:14,413 - INFO - wl5i8vWqGQXLuwVRAAAA: Received packet PONG data 
+2025-01-31 15:33:14,475 - INFO - Wgf-BNWYFcjdGX8sAAAC: Sending packet PING data None
+2025-01-31 15:33:14,477 - INFO - Wgf-BNWYFcjdGX8sAAAC: Received packet PONG data 
+2025-01-31 15:33:15,958 - INFO - 127.0.0.1 - - [31/Jan/2025 15:33:15] "[35m[1mPOST /api/user/login HTTP/1.1[0m" 500 -
+2025-01-31 15:33:39,418 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet PING data None
+2025-01-31 15:33:39,420 - INFO - wl5i8vWqGQXLuwVRAAAA: Received packet PONG data 
+2025-01-31 15:33:39,479 - INFO - Wgf-BNWYFcjdGX8sAAAC: Sending packet PING data None
+2025-01-31 15:33:39,480 - INFO - Wgf-BNWYFcjdGX8sAAAC: Received packet PONG data 
+2025-01-31 15:34:04,424 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet PING data None
+2025-01-31 15:34:04,426 - INFO - wl5i8vWqGQXLuwVRAAAA: Received packet PONG data 
+2025-01-31 15:34:04,486 - INFO - Wgf-BNWYFcjdGX8sAAAC: Sending packet PING data None
+2025-01-31 15:34:04,487 - INFO - Wgf-BNWYFcjdGX8sAAAC: Received packet PONG data 
+2025-01-31 15:34:29,431 - INFO - wl5i8vWqGQXLuwVRAAAA: Sending packet PING data None
+2025-01-31 15:34:29,433 - INFO - wl5i8vWqGQXLuwVRAAAA: Received packet PONG data 
+2025-01-31 15:34:29,489 - INFO - Wgf-BNWYFcjdGX8sAAAC: Sending packet PING data None
+2025-01-31 15:34:29,490 - INFO - Wgf-BNWYFcjdGX8sAAAC: Received packet PONG data 
+2025-01-31 15:34:32,429 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 15:34:32,469 - INFO -  * Restarting with stat
+2025-01-31 15:34:32,609 - WARNING -  * Debugger is active!
+2025-01-31 15:34:32,612 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 15:34:33,742 - INFO - -4asiU-nmuey2rU1AAAA: Sending packet OPEN data {'sid': '-4asiU-nmuey2rU1AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:34:33,742 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "GET /socket.io/?EIO=4&transport=polling&t=v83nvfkh HTTP/1.1" 200 -
+2025-01-31 15:34:33,745 - INFO - -4asiU-nmuey2rU1AAAA: Received packet MESSAGE data 0
+2025-01-31 15:34:33,746 - INFO - -4asiU-nmuey2rU1AAAA: Sending packet MESSAGE data 0{"sid":"YUVIuxv8AxmAz-nwAAAB"}
+2025-01-31 15:34:33,746 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "POST /socket.io/?EIO=4&transport=polling&t=v83o0edq&sid=-4asiU-nmuey2rU1AAAA HTTP/1.1" 200 -
+2025-01-31 15:34:33,746 - INFO - -4asiU-nmuey2rU1AAAA: Received request to upgrade to websocket
+2025-01-31 15:34:33,746 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "GET /socket.io/?EIO=4&transport=polling&t=v83o084b&sid=-4asiU-nmuey2rU1AAAA HTTP/1.1" 200 -
+2025-01-31 15:34:33,749 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "GET /socket.io/?EIO=4&transport=polling&t=v83o46r0&sid=-4asiU-nmuey2rU1AAAA HTTP/1.1" 200 -
+2025-01-31 15:34:33,749 - INFO - -4asiU-nmuey2rU1AAAA: Upgrade to websocket successful
+2025-01-31 15:34:33,851 - INFO - WC5PwbVWvoM3UPi1AAAC: Sending packet OPEN data {'sid': 'WC5PwbVWvoM3UPi1AAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:34:33,852 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "GET /socket.io/?EIO=4&transport=polling&t=v83qvhii HTTP/1.1" 200 -
+2025-01-31 15:34:33,856 - INFO - WC5PwbVWvoM3UPi1AAAC: Received packet MESSAGE data 0
+2025-01-31 15:34:33,857 - INFO - WC5PwbVWvoM3UPi1AAAC: Received request to upgrade to websocket
+2025-01-31 15:34:33,857 - INFO - WC5PwbVWvoM3UPi1AAAC: Sending packet MESSAGE data 0{"sid":"BHNLZ688krYSLxYZAAAD"}
+2025-01-31 15:34:33,859 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "GET /socket.io/?EIO=4&transport=polling&t=v83r245i&sid=WC5PwbVWvoM3UPi1AAAC HTTP/1.1" 200 -
+2025-01-31 15:34:33,859 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:33] "POST /socket.io/?EIO=4&transport=polling&t=v83r1tqj&sid=WC5PwbVWvoM3UPi1AAAC HTTP/1.1" 200 -
+2025-01-31 15:34:33,862 - INFO - WC5PwbVWvoM3UPi1AAAC: Upgrade to websocket successful
+2025-01-31 15:34:47,323 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:47] "OPTIONS /api/user/login HTTP/1.1" 200 -
+2025-01-31 15:34:47,327 - INFO - POST request from the address 127.0.0.1
+2025-01-31 15:34:47,546 - INFO - emitting event "login_status" to all [/]
+2025-01-31 15:34:47,547 - INFO - -4asiU-nmuey2rU1AAAA: Sending packet MESSAGE data 2["login_status",{"status":"success","message":"Login successful"}]
+2025-01-31 15:34:47,547 - INFO - WC5PwbVWvoM3UPi1AAAC: Sending packet MESSAGE data 2["login_status",{"status":"success","message":"Login successful"}]
+2025-01-31 15:34:47,547 - INFO - User login with email test1@app.com was successful.
+2025-01-31 15:34:47,547 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:47] "POST /api/user/login HTTP/1.1" 200 -
+2025-01-31 15:34:51,416 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,416 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,416 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,417 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,417 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,417 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,417 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-01-31 15:34:51,417 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-01-31 15:34:51,417 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-01-31 15:34:51,417 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-01-31 15:34:51,417 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-01-31 15:34:51,417 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-01-31 15:34:51,417 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-01-31 15:34:51,417 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-01-31 15:34:51,418 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-01-31 15:34:51,418 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-01-31 15:34:51,418 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-01-31 15:34:51,418 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-01-31 15:34:51,421 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,422 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,422 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,423 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,424 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,424 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,424 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-01-31 15:34:51,425 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-01-31 15:34:51,425 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-01-31 15:34:51,425 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-01-31 15:34:51,425 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-01-31 15:34:51,425 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-01-31 15:34:51,425 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-01-31 15:34:51,425 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-01-31 15:34:51,425 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-01-31 15:34:51,425 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-01-31 15:34:51,425 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-01-31 15:34:51,426 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,426 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-01-31 15:34:51,427 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-01-31 15:34:51,427 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-01-31 15:34:51,428 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,428 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,428 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,428 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,428 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,428 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,428 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-01-31 15:34:51,428 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-01-31 15:34:51,429 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-01-31 15:34:51,429 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-01-31 15:34:51,429 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-01-31 15:34:51,429 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-01-31 15:34:51,429 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-01-31 15:34:51,429 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-01-31 15:34:51,429 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-01-31 15:34:51,429 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-01-31 15:34:51,430 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-01-31 15:34:51,430 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-01-31 15:34:51,430 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,430 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,431 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,431 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,431 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-01-31 15:34:51,431 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-01-31 15:34:51,431 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,431 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-01-31 15:34:51,431 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,431 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-01-31 15:34:51,432 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-01-31 15:34:51,432 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-01-31 15:34:51,432 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-01-31 15:34:51,432 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-01-31 15:34:51,432 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-01-31 15:34:51,432 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-01-31 15:34:51,432 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-01-31 15:34:51,432 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-01-31 15:34:51,433 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,433 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,434 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:34:51,434 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-01-31 15:34:51,434 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-01-31 15:34:51,434 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-01-31 15:34:51,434 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-01-31 15:34:51,434 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-01-31 15:34:51,434 - INFO - 127.0.0.1 - - [31/Jan/2025 15:34:51] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-01-31 15:34:58,747 - INFO - -4asiU-nmuey2rU1AAAA: Sending packet PING data None
+2025-01-31 15:34:58,749 - INFO - -4asiU-nmuey2rU1AAAA: Received packet PONG data 
+2025-01-31 15:34:58,856 - INFO - WC5PwbVWvoM3UPi1AAAC: Sending packet PING data None
+2025-01-31 15:34:58,857 - INFO - WC5PwbVWvoM3UPi1AAAC: Received packet PONG data 
+2025-01-31 15:35:14,200 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:14] "OPTIONS /api/raport/test1@app.com HTTP/1.1" 200 -
+2025-01-31 15:35:14,218 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:14] "[35m[1mGET /api/raport/test1@app.com HTTP/1.1[0m" 500 -
+2025-01-31 15:35:23,756 - INFO - -4asiU-nmuey2rU1AAAA: Sending packet PING data None
+2025-01-31 15:35:23,758 - INFO - -4asiU-nmuey2rU1AAAA: Received packet PONG data 
+2025-01-31 15:35:23,861 - INFO - WC5PwbVWvoM3UPi1AAAC: Sending packet PING data None
+2025-01-31 15:35:23,863 - INFO - WC5PwbVWvoM3UPi1AAAC: Received packet PONG data 
+2025-01-31 15:35:32,669 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 15:35:32,707 - INFO -  * Restarting with stat
+2025-01-31 15:35:32,850 - WARNING -  * Debugger is active!
+2025-01-31 15:35:32,857 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 15:35:33,385 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet OPEN data {'sid': '48eMJPcrU6po8M5wAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:35:33,386 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "GET /socket.io/?EIO=4&transport=polling&t=v9dolacy HTTP/1.1" 200 -
+2025-01-31 15:35:33,390 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet MESSAGE data 0
+2025-01-31 15:35:33,390 - INFO - 48eMJPcrU6po8M5wAAAA: Received request to upgrade to websocket
+2025-01-31 15:35:33,391 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet MESSAGE data 0{"sid":"I92gEcGmFLQgApYLAAAB"}
+2025-01-31 15:35:33,392 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "POST /socket.io/?EIO=4&transport=polling&t=v9dos5vh&sid=48eMJPcrU6po8M5wAAAA HTTP/1.1" 200 -
+2025-01-31 15:35:33,393 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "GET /socket.io/?EIO=4&transport=polling&t=v9dosi9a&sid=48eMJPcrU6po8M5wAAAA HTTP/1.1" 200 -
+2025-01-31 15:35:33,395 - INFO - 48eMJPcrU6po8M5wAAAA: Upgrade to websocket successful
+2025-01-31 15:35:33,793 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet OPEN data {'sid': 'peTzMZ6vu1OW7FD6AAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:35:33,794 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "GET /socket.io/?EIO=4&transport=polling&t=v9dzzjfx HTTP/1.1" 200 -
+2025-01-31 15:35:33,797 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet MESSAGE data 0
+2025-01-31 15:35:33,798 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet MESSAGE data 0{"sid":"8UQa4MOnhmtF3EOgAAAD"}
+2025-01-31 15:35:33,799 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "GET /socket.io/?EIO=4&transport=polling&t=v9e03124&sid=peTzMZ6vu1OW7FD6AAAC HTTP/1.1" 200 -
+2025-01-31 15:35:33,799 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "POST /socket.io/?EIO=4&transport=polling&t=v9e03ycq&sid=peTzMZ6vu1OW7FD6AAAC HTTP/1.1" 200 -
+2025-01-31 15:35:33,798 - INFO - peTzMZ6vu1OW7FD6AAAC: Received request to upgrade to websocket
+2025-01-31 15:35:33,802 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:33] "GET /socket.io/?EIO=4&transport=polling&t=v9e09kou&sid=peTzMZ6vu1OW7FD6AAAC HTTP/1.1" 200 -
+2025-01-31 15:35:33,803 - INFO - peTzMZ6vu1OW7FD6AAAC: Upgrade to websocket successful
+2025-01-31 15:35:34,743 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:34] "OPTIONS /api/raport/test1@app.com HTTP/1.1" 200 -
+2025-01-31 15:35:34,746 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:34,752 - INFO - Getting report for user test1@app.com: Success
+2025-01-31 15:35:34,753 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:34] "GET /api/raport/test1@app.com HTTP/1.1" 200 -
+2025-01-31 15:35:36,317 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:36,317 - INFO - Serving Report Use_Raport_test1@app.com.pdf: Success
+2025-01-31 15:35:36,321 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:36] "GET /reports/Use_Raport_test1@app.com.pdf HTTP/1.1" 200 -
+2025-01-31 15:35:41,474 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,475 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,476 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-01-31 15:35:41,475 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,476 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,476 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,477 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-01-31 15:35:41,477 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-01-31 15:35:41,475 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,477 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-01-31 15:35:41,477 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-01-31 15:35:41,477 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-01-31 15:35:41,477 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-01-31 15:35:41,477 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-01-31 15:35:41,478 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-01-31 15:35:41,478 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-01-31 15:35:41,478 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,479 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-01-31 15:35:41,479 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-01-31 15:35:41,480 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,480 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-01-31 15:35:41,480 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,481 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-01-31 15:35:41,481 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-01-31 15:35:41,481 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,481 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-01-31 15:35:41,481 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-01-31 15:35:41,482 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,482 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,483 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-01-31 15:35:41,483 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,483 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-01-31 15:35:41,483 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,483 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-01-31 15:35:41,483 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-01-31 15:35:41,483 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-01-31 15:35:41,484 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,484 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-01-31 15:35:41,484 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-01-31 15:35:41,484 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-01-31 15:35:41,484 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-01-31 15:35:41,484 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-01-31 15:35:41,484 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-01-31 15:35:41,485 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,485 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-01-31 15:35:41,485 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,485 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-01-31 15:35:41,486 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-01-31 15:35:41,486 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,486 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-01-31 15:35:41,487 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,488 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-01-31 15:35:41,488 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,488 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-01-31 15:35:41,488 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-01-31 15:35:41,488 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,489 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-01-31 15:35:41,489 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-01-31 15:35:41,489 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,489 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-01-31 15:35:41,489 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-01-31 15:35:41,490 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-01-31 15:35:41,489 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-01-31 15:35:41,490 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,490 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-01-31 15:35:41,491 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,492 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-01-31 15:35:41,493 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,493 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-01-31 15:35:41,494 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-01-31 15:35:41,494 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-01-31 15:35:41,494 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-01-31 15:35:41,494 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-01-31 15:35:41,495 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-01-31 15:35:41,495 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,495 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-01-31 15:35:41,495 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,496 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:41,496 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-01-31 15:35:41,496 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-01-31 15:35:41,496 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-01-31 15:35:41,497 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-01-31 15:35:41,497 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-01-31 15:35:41,497 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:41] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-01-31 15:35:44,011 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet OPEN data {'sid': 'OqZFPq-_gh_Mlh8pAAAE', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:35:44,011 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:44] "GET /socket.io/?EIO=4&transport=polling&t=v9lvt06w HTTP/1.1" 200 -
+2025-01-31 15:35:44,021 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet MESSAGE data 0
+2025-01-31 15:35:44,021 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet MESSAGE data 0{"sid":"hzSXWXAMeU-ebO7dAAAF"}
+2025-01-31 15:35:44,021 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:44] "POST /socket.io/?EIO=4&transport=polling&t=v9lw3eau&sid=OqZFPq-_gh_Mlh8pAAAE HTTP/1.1" 200 -
+2025-01-31 15:35:44,022 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received request to upgrade to websocket
+2025-01-31 15:35:44,022 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:44] "GET /socket.io/?EIO=4&transport=polling&t=v9lw3u44&sid=OqZFPq-_gh_Mlh8pAAAE HTTP/1.1" 200 -
+2025-01-31 15:35:44,024 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:44] "GET /socket.io/?EIO=4&transport=polling&t=v9lw7ke1&sid=OqZFPq-_gh_Mlh8pAAAE HTTP/1.1" 200 -
+2025-01-31 15:35:44,024 - INFO - OqZFPq-_gh_Mlh8pAAAE: Upgrade to websocket successful
+2025-01-31 15:35:54,993 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet OPEN data {'sid': 'oU_JNX4_Wg6qgexqAAAG', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:35:54,993 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:54] "GET /socket.io/?EIO=4&transport=polling&t=v9ucwvs3 HTTP/1.1" 200 -
+2025-01-31 15:35:54,997 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:54,997 - INFO - Fetchin usertest1@app.com Transactions: was successful.
+2025-01-31 15:35:54,997 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:54] "GET /api/user/test1@app.com/transaction HTTP/1.1" 200 -
+2025-01-31 15:35:54,998 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet MESSAGE data 0
+2025-01-31 15:35:54,998 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet MESSAGE data 0{"sid":"wW_PqTj4W26sVLXZAAAH"}
+2025-01-31 15:35:54,998 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:54] "POST /socket.io/?EIO=4&transport=polling&t=v9ud02hy&sid=oU_JNX4_Wg6qgexqAAAG HTTP/1.1" 200 -
+2025-01-31 15:35:54,999 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:54] "GET /socket.io/?EIO=4&transport=polling&t=v9ud1fyg&sid=oU_JNX4_Wg6qgexqAAAG HTTP/1.1" 200 -
+2025-01-31 15:35:54,999 - INFO - oU_JNX4_Wg6qgexqAAAG: Received request to upgrade to websocket
+2025-01-31 15:35:55,001 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:35:55,001 - INFO - Fetchin usertest1@app.com Transactions: was successful.
+2025-01-31 15:35:55,001 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:55] "GET /api/user/test1@app.com/transaction HTTP/1.1" 200 -
+2025-01-31 15:35:55,002 - INFO - 127.0.0.1 - - [31/Jan/2025 15:35:55] "GET /socket.io/?EIO=4&transport=polling&t=v9ud51z4&sid=oU_JNX4_Wg6qgexqAAAG HTTP/1.1" 200 -
+2025-01-31 15:35:55,011 - INFO - oU_JNX4_Wg6qgexqAAAG: Upgrade to websocket successful
+2025-01-31 15:35:58,387 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:35:58,389 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:35:58,798 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:35:58,801 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:36:05,937 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet OPEN data {'sid': 'VbpAqq0FFB8Z3X-4AAAI', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:36:05,937 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:05] "GET /socket.io/?EIO=4&transport=polling&t=va2sv4fz HTTP/1.1" 200 -
+2025-01-31 15:36:05,946 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet MESSAGE data 0
+2025-01-31 15:36:05,946 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet MESSAGE data 0{"sid":"DE5HYEMEOce-n9SBAAAJ"}
+2025-01-31 15:36:05,946 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:05] "POST /socket.io/?EIO=4&transport=polling&t=va2t3ddm&sid=VbpAqq0FFB8Z3X-4AAAI HTTP/1.1" 200 -
+2025-01-31 15:36:05,946 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:05] "GET /socket.io/?EIO=4&transport=polling&t=va2t3bun&sid=VbpAqq0FFB8Z3X-4AAAI HTTP/1.1" 200 -
+2025-01-31 15:36:05,947 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received request to upgrade to websocket
+2025-01-31 15:36:05,951 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:05] "GET /socket.io/?EIO=4&transport=polling&t=va2tawk9&sid=VbpAqq0FFB8Z3X-4AAAI HTTP/1.1" 200 -
+2025-01-31 15:36:05,951 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:36:05,951 - INFO - Getting transaction 31 from user test1@app.com: Success
+2025-01-31 15:36:05,951 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:05] "GET /api/user/test1@app.com/transaction/31 HTTP/1.1" 200 -
+2025-01-31 15:36:05,952 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:36:05,952 - INFO - VbpAqq0FFB8Z3X-4AAAI: Upgrade to websocket successful
+2025-01-31 15:36:05,952 - INFO - Getting transaction 31 from user test1@app.com: Success
+2025-01-31 15:36:05,953 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:05] "GET /api/user/test1@app.com/transaction/31 HTTP/1.1" 200 -
+2025-01-31 15:36:09,016 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:36:09,018 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:36:15,517 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:36:15,517 - INFO - Fetchin usertest1@app.com Transactions: was successful.
+2025-01-31 15:36:15,518 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:15] "GET /api/user/test1@app.com/transaction HTTP/1.1" 200 -
+2025-01-31 15:36:15,520 - INFO - GET request from the address 127.0.0.1
+2025-01-31 15:36:15,521 - INFO - Fetchin usertest1@app.com Transactions: was successful.
+2025-01-31 15:36:15,521 - INFO - 127.0.0.1 - - [31/Jan/2025 15:36:15] "GET /api/user/test1@app.com/transaction HTTP/1.1" 200 -
+2025-01-31 15:36:19,998 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:36:20,000 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:36:23,391 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:36:23,393 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:36:23,803 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:36:23,805 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:36:30,942 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:36:30,943 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:36:34,020 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:36:34,022 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:36:45,006 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:36:45,007 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:36:48,398 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:36:48,400 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:36:48,810 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:36:48,812 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:36:55,949 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:36:55,950 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:36:59,027 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:36:59,029 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:37:10,013 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:37:10,015 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:37:13,403 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:37:13,405 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:37:13,818 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:37:13,819 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:37:20,952 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:37:20,953 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:37:24,034 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:37:24,036 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:37:35,020 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:37:35,021 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:37:38,410 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:37:38,412 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:37:38,824 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:37:38,826 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:37:45,953 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:37:45,955 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:37:49,037 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:37:49,039 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:38:00,026 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:38:00,028 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:38:03,417 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:38:03,418 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:38:03,830 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:38:03,832 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:38:10,956 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:38:10,957 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:38:14,043 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:38:14,045 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:38:25,031 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:38:25,033 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:38:28,420 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:38:28,422 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:38:28,837 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:38:28,839 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:38:35,963 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:38:35,964 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:38:39,050 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:38:39,052 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:38:50,036 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:38:50,038 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:38:53,423 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:38:53,425 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:38:53,839 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:38:53,841 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:39:00,970 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:39:00,972 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:39:04,058 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:39:04,060 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:39:15,044 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:39:15,045 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:39:18,430 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:39:18,432 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:39:18,847 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:39:18,848 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:39:25,977 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:39:25,978 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:39:29,061 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:39:29,062 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:39:40,051 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:39:40,053 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:39:43,437 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:39:43,439 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:39:43,853 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:39:43,854 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:39:50,983 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:39:50,985 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:39:54,064 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:39:54,065 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:40:05,058 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:40:05,060 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:40:08,443 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:40:08,444 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:40:08,860 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:40:08,861 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:40:15,991 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:40:15,992 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:40:19,071 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:40:19,073 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:40:30,066 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:40:30,068 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:40:33,450 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:40:33,452 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:40:33,865 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:40:33,866 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:40:40,998 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:40:40,999 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:40:44,078 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:40:44,080 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:40:55,069 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:40:55,071 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:40:58,457 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:40:58,459 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:40:58,867 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:40:58,869 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:41:06,003 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:41:06,004 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:41:09,083 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:41:09,085 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:41:20,076 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:41:20,078 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:41:23,461 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:41:23,463 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:41:23,874 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:41:23,876 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:41:31,009 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:41:31,011 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:41:34,090 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:41:34,092 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:41:45,084 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:41:45,085 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:41:48,468 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:41:48,470 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:41:48,881 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:41:48,883 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:41:56,016 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:41:56,018 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:41:59,096 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:41:59,098 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:42:10,090 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:42:10,092 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:42:13,476 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:42:13,477 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:42:13,888 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:42:13,890 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:42:21,024 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:42:21,025 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:42:24,102 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:42:24,104 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:42:35,098 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:42:35,099 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:42:38,478 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:42:38,480 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:42:38,895 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:42:38,897 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:42:46,031 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:42:46,032 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:42:49,107 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:42:49,108 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:43:00,102 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:43:00,104 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:43:03,485 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:43:03,487 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:43:03,899 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:43:03,900 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:43:11,038 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:43:11,039 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:43:14,114 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:43:14,115 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:43:25,110 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:43:25,112 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:43:28,492 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:43:28,494 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:43:28,906 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:43:28,907 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:43:36,042 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:43:36,044 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:43:39,119 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:43:39,120 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:43:50,117 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:43:50,119 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:43:53,499 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:43:53,501 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:43:53,913 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:43:53,914 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:44:01,047 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:44:01,050 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:44:04,126 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:44:04,127 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:44:15,125 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:44:15,126 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:44:18,504 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:44:18,505 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:44:18,919 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:44:18,920 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:44:26,055 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:44:26,057 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:44:29,133 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:44:29,135 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:44:40,127 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:44:40,128 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:44:43,511 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:44:43,512 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:44:43,922 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:44:43,924 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:44:51,063 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:44:51,064 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:44:54,135 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:44:54,137 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:45:05,134 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:45:05,135 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:45:08,517 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:45:08,519 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:45:08,928 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:45:08,930 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:45:16,067 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:45:16,068 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:45:19,139 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:45:19,141 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:45:30,136 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:45:30,138 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:45:33,519 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:45:33,521 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:45:33,930 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:45:33,931 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:45:41,065 - INFO - VbpAqq0FFB8Z3X-4AAAI: Sending packet PING data None
+2025-01-31 15:45:41,066 - INFO - VbpAqq0FFB8Z3X-4AAAI: Received packet PONG data 
+2025-01-31 15:45:44,142 - INFO - OqZFPq-_gh_Mlh8pAAAE: Sending packet PING data None
+2025-01-31 15:45:44,144 - INFO - OqZFPq-_gh_Mlh8pAAAE: Received packet PONG data 
+2025-01-31 15:45:55,141 - INFO - oU_JNX4_Wg6qgexqAAAG: Sending packet PING data None
+2025-01-31 15:45:55,143 - INFO - oU_JNX4_Wg6qgexqAAAG: Received packet PONG data 
+2025-01-31 15:45:58,525 - INFO - 48eMJPcrU6po8M5wAAAA: Sending packet PING data None
+2025-01-31 15:45:58,526 - INFO - 48eMJPcrU6po8M5wAAAA: Received packet PONG data 
+2025-01-31 15:45:58,935 - INFO - peTzMZ6vu1OW7FD6AAAC: Sending packet PING data None
+2025-01-31 15:45:58,937 - INFO - peTzMZ6vu1OW7FD6AAAC: Received packet PONG data 
+2025-01-31 15:46:00,116 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:00] "GET /socket.io/?EIO=4&transport=websocket&sid=VbpAqq0FFB8Z3X-4AAAI HTTP/1.1" 200 -
+2025-01-31 15:46:00,116 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:00] "GET /socket.io/?EIO=4&transport=websocket&sid=oU_JNX4_Wg6qgexqAAAG HTTP/1.1" 200 -
+2025-01-31 15:46:00,117 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:00] "GET /socket.io/?EIO=4&transport=websocket&sid=peTzMZ6vu1OW7FD6AAAC HTTP/1.1" 200 -
+2025-01-31 15:46:00,117 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:00] "GET /socket.io/?EIO=4&transport=websocket&sid=48eMJPcrU6po8M5wAAAA HTTP/1.1" 200 -
+2025-01-31 15:46:00,117 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:00] "GET /socket.io/?EIO=4&transport=websocket&sid=OqZFPq-_gh_Mlh8pAAAE HTTP/1.1" 200 -
+2025-01-31 15:46:01,069 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet OPEN data {'sid': 'jULMUrnN7nZW-cmvAAAK', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:46:01,069 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:01] "GET /socket.io/?EIO=4&transport=polling&t=vmu09nk5 HTTP/1.1" 200 -
+2025-01-31 15:46:01,075 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet MESSAGE data 0
+2025-01-31 15:46:01,076 - INFO - jULMUrnN7nZW-cmvAAAK: Received request to upgrade to websocket
+2025-01-31 15:46:01,076 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet MESSAGE data 0{"sid":"VDT5P6VMbQ0LWVq3AAAL"}
+2025-01-31 15:46:01,078 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:01] "GET /socket.io/?EIO=4&transport=polling&t=vmu0hh19&sid=jULMUrnN7nZW-cmvAAAK HTTP/1.1" 200 -
+2025-01-31 15:46:01,078 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:01] "POST /socket.io/?EIO=4&transport=polling&t=vmu0gaxd&sid=jULMUrnN7nZW-cmvAAAK HTTP/1.1" 200 -
+2025-01-31 15:46:01,082 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:01] "GET /socket.io/?EIO=4&transport=polling&t=vmu0oxft&sid=jULMUrnN7nZW-cmvAAAK HTTP/1.1" 200 -
+2025-01-31 15:46:01,084 - INFO - jULMUrnN7nZW-cmvAAAK: Upgrade to websocket successful
+2025-01-31 15:46:02,068 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet OPEN data {'sid': 'NYZ8i-pK6M4BBK75AAAM', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:46:02,069 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmus0wrg HTTP/1.1" 200 -
+2025-01-31 15:46:02,069 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet OPEN data {'sid': '6Hvnsyl68-BDycMUAAAN', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:46:02,070 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmus1hzl HTTP/1.1" 200 -
+2025-01-31 15:46:02,071 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet OPEN data {'sid': 'WEm30Iwe-3aHG2t5AAAO', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:46:02,072 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmus1lu9 HTTP/1.1" 200 -
+2025-01-31 15:46:02,073 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet OPEN data {'sid': 'P55Jw5TwEp2I5JsQAAAP', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-01-31 15:46:02,073 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmus1zwe HTTP/1.1" 200 -
+2025-01-31 15:46:02,078 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet MESSAGE data 0
+2025-01-31 15:46:02,079 - INFO - NYZ8i-pK6M4BBK75AAAM: Received request to upgrade to websocket
+2025-01-31 15:46:02,080 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmusckbo&sid=NYZ8i-pK6M4BBK75AAAM HTTP/1.1" 200 -
+2025-01-31 15:46:02,079 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet MESSAGE data 0{"sid":"FyCLO7IG1bI859ujAAAQ"}
+2025-01-31 15:46:02,081 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet MESSAGE data 0
+2025-01-31 15:46:02,082 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "POST /socket.io/?EIO=4&transport=polling&t=vmusbg5d&sid=NYZ8i-pK6M4BBK75AAAM HTTP/1.1" 200 -
+2025-01-31 15:46:02,082 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet MESSAGE data 0{"sid":"_OUgGIzZ95jKhVnrAAAR"}
+2025-01-31 15:46:02,083 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "POST /socket.io/?EIO=4&transport=polling&t=vmuseegg&sid=6Hvnsyl68-BDycMUAAAN HTTP/1.1" 200 -
+2025-01-31 15:46:02,086 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmusheek&sid=6Hvnsyl68-BDycMUAAAN HTTP/1.1" 200 -
+2025-01-31 15:46:02,087 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet MESSAGE data 0
+2025-01-31 15:46:02,087 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet MESSAGE data 0{"sid":"1Usvjijtt3ingf6kAAAS"}
+2025-01-31 15:46:02,087 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "POST /socket.io/?EIO=4&transport=polling&t=vmuslgsy&sid=WEm30Iwe-3aHG2t5AAAO HTTP/1.1" 200 -
+2025-01-31 15:46:02,090 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmusn4qj&sid=WEm30Iwe-3aHG2t5AAAO HTTP/1.1" 200 -
+2025-01-31 15:46:02,091 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet MESSAGE data 0
+2025-01-31 15:46:02,091 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet MESSAGE data 0{"sid":"Y1DfK1iYtbXbZYl7AAAT"}
+2025-01-31 15:46:02,091 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "POST /socket.io/?EIO=4&transport=polling&t=vmusptkd&sid=P55Jw5TwEp2I5JsQAAAP HTTP/1.1" 200 -
+2025-01-31 15:46:02,092 - INFO - 6Hvnsyl68-BDycMUAAAN: Received request to upgrade to websocket
+2025-01-31 15:46:02,098 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmusqiln&sid=P55Jw5TwEp2I5JsQAAAP HTTP/1.1" 200 -
+2025-01-31 15:46:02,102 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmut0ipq&sid=NYZ8i-pK6M4BBK75AAAM HTTP/1.1" 200 -
+2025-01-31 15:46:02,105 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmut1iyc&sid=6Hvnsyl68-BDycMUAAAN HTTP/1.1" 200 -
+2025-01-31 15:46:02,107 - INFO - WEm30Iwe-3aHG2t5AAAO: Received request to upgrade to websocket
+2025-01-31 15:46:02,112 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmutbtc2&sid=NYZ8i-pK6M4BBK75AAAM HTTP/1.1" 200 -
+2025-01-31 15:46:02,113 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmutbnnx&sid=6Hvnsyl68-BDycMUAAAN HTTP/1.1" 200 -
+2025-01-31 15:46:02,114 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmut265y&sid=WEm30Iwe-3aHG2t5AAAO HTTP/1.1" 200 -
+2025-01-31 15:46:02,114 - INFO - NYZ8i-pK6M4BBK75AAAM: Upgrade to websocket successful
+2025-01-31 15:46:02,116 - INFO - 6Hvnsyl68-BDycMUAAAN: Upgrade to websocket successful
+2025-01-31 15:46:02,116 - INFO - WEm30Iwe-3aHG2t5AAAO: Upgrade to websocket successful
+2025-01-31 15:46:02,122 - INFO - P55Jw5TwEp2I5JsQAAAP: Received request to upgrade to websocket
+2025-01-31 15:46:02,124 - INFO - 127.0.0.1 - - [31/Jan/2025 15:46:02] "GET /socket.io/?EIO=4&transport=polling&t=vmutafog&sid=P55Jw5TwEp2I5JsQAAAP HTTP/1.1" 200 -
+2025-01-31 15:46:02,125 - INFO - P55Jw5TwEp2I5JsQAAAP: Upgrade to websocket successful
+2025-01-31 15:48:27,776 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet PING data None
+2025-01-31 15:48:27,778 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet PONG data 
+2025-01-31 15:48:28,781 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet PING data None
+2025-01-31 15:48:28,782 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet PING data None
+2025-01-31 15:48:28,782 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet PING data None
+2025-01-31 15:48:28,782 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet PING data None
+2025-01-31 15:48:28,784 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet PONG data 
+2025-01-31 15:48:28,784 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet PONG data 
+2025-01-31 15:48:28,784 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet PONG data 
+2025-01-31 15:48:28,785 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet PONG data 
+2025-01-31 15:48:56,979 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet PING data None
+2025-01-31 15:48:56,980 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet PONG data 
+2025-01-31 15:48:57,986 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet PING data None
+2025-01-31 15:48:57,986 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet PING data None
+2025-01-31 15:48:57,986 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet PING data None
+2025-01-31 15:48:57,987 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet PING data None
+2025-01-31 15:48:57,988 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet PONG data 
+2025-01-31 15:48:57,989 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet PONG data 
+2025-01-31 15:48:57,989 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet PONG data 
+2025-01-31 15:48:57,990 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet PONG data 
+2025-01-31 15:49:21,988 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet PING data None
+2025-01-31 15:49:21,990 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet PONG data 
+2025-01-31 15:49:22,990 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet PING data None
+2025-01-31 15:49:22,990 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet PING data None
+2025-01-31 15:49:22,990 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet PING data None
+2025-01-31 15:49:22,993 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet PONG data 
+2025-01-31 15:49:22,993 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet PONG data 
+2025-01-31 15:49:22,994 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet PONG data 
+2025-01-31 15:49:22,999 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet PING data None
+2025-01-31 15:49:23,000 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet PONG data 
+2025-01-31 15:51:17,953 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet PING data None
+2025-01-31 15:51:17,955 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet PONG data 
+2025-01-31 15:51:18,956 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet PING data None
+2025-01-31 15:51:18,956 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet PING data None
+2025-01-31 15:51:18,957 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet PING data None
+2025-01-31 15:51:18,957 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet PING data None
+2025-01-31 15:51:18,959 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet PONG data 
+2025-01-31 15:51:18,960 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet PONG data 
+2025-01-31 15:51:18,961 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet PONG data 
+2025-01-31 15:51:18,961 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet PONG data 
+2025-01-31 16:27:56,638 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet PING data None
+2025-01-31 16:27:56,641 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet PONG data 
+2025-01-31 16:27:57,642 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet PING data None
+2025-01-31 16:27:57,642 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet PING data None
+2025-01-31 16:27:57,642 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet PING data None
+2025-01-31 16:27:57,642 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet PING data None
+2025-01-31 16:27:57,645 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet PONG data 
+2025-01-31 16:27:57,645 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet PONG data 
+2025-01-31 16:27:57,645 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet PONG data 
+2025-01-31 16:27:57,646 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet PONG data 
+2025-01-31 17:10:47,268 - INFO - jULMUrnN7nZW-cmvAAAK: Sending packet PING data None
+2025-01-31 17:10:47,270 - INFO - jULMUrnN7nZW-cmvAAAK: Received packet PONG data 
+2025-01-31 17:10:48,274 - INFO - WEm30Iwe-3aHG2t5AAAO: Sending packet PING data None
+2025-01-31 17:10:48,274 - INFO - P55Jw5TwEp2I5JsQAAAP: Sending packet PING data None
+2025-01-31 17:10:48,274 - INFO - NYZ8i-pK6M4BBK75AAAM: Sending packet PING data None
+2025-01-31 17:10:48,275 - INFO - 6Hvnsyl68-BDycMUAAAN: Sending packet PING data None
+2025-01-31 17:10:48,276 - INFO - WEm30Iwe-3aHG2t5AAAO: Received packet PONG data 
+2025-01-31 17:10:48,276 - INFO - P55Jw5TwEp2I5JsQAAAP: Received packet PONG data 
+2025-01-31 17:10:48,276 - INFO - NYZ8i-pK6M4BBK75AAAM: Received packet PONG data 
+2025-01-31 17:10:48,277 - INFO - 6Hvnsyl68-BDycMUAAAN: Received packet PONG data 
+2025-01-31 17:10:54,052 - INFO - 127.0.0.1 - - [31/Jan/2025 17:10:54] "GET /socket.io/?EIO=4&transport=websocket&sid=NYZ8i-pK6M4BBK75AAAM HTTP/1.1" 200 -
+2025-01-31 17:10:54,052 - INFO - 127.0.0.1 - - [31/Jan/2025 17:10:54] "GET /socket.io/?EIO=4&transport=websocket&sid=jULMUrnN7nZW-cmvAAAK HTTP/1.1" 200 -
+2025-01-31 17:10:54,053 - INFO - 127.0.0.1 - - [31/Jan/2025 17:10:54] "GET /socket.io/?EIO=4&transport=websocket&sid=6Hvnsyl68-BDycMUAAAN HTTP/1.1" 200 -
+2025-01-31 17:10:54,053 - INFO - 127.0.0.1 - - [31/Jan/2025 17:10:54] "GET /socket.io/?EIO=4&transport=websocket&sid=P55Jw5TwEp2I5JsQAAAP HTTP/1.1" 200 -
+2025-01-31 17:10:54,054 - INFO - 127.0.0.1 - - [31/Jan/2025 17:10:54] "GET /socket.io/?EIO=4&transport=websocket&sid=WEm30Iwe-3aHG2t5AAAO HTTP/1.1" 200 -
+2025-01-31 17:25:10,147 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 17:25:10,187 - INFO -  * Restarting with stat
+2025-01-31 17:25:10,319 - WARNING -  * Debugger is active!
+2025-01-31 17:25:10,322 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 17:29:17,079 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-01-31 17:29:17,079 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 17:29:17,079 - INFO -  * Restarting with stat
+2025-01-31 17:29:17,209 - WARNING -  * Debugger is active!
+2025-01-31 17:29:17,211 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 17:31:36,793 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:443
+ * Running on https://192.168.1.131:443
+2025-01-31 17:31:36,793 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 17:31:36,793 - INFO -  * Restarting with stat
+2025-01-31 17:31:36,921 - WARNING -  * Debugger is active!
+2025-01-31 17:31:36,923 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 17:33:51,278 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:443
+ * Running on https://192.168.1.131:443
+2025-01-31 17:33:51,278 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 17:33:51,278 - INFO -  * Restarting with stat
+2025-01-31 17:33:51,406 - WARNING -  * Debugger is active!
+2025-01-31 17:33:51,409 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 18:13:48,806 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:443
+ * Running on https://192.168.1.131:443
+2025-01-31 18:13:48,806 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 18:13:48,806 - INFO -  * Restarting with stat
+2025-01-31 18:13:48,936 - WARNING -  * Debugger is active!
+2025-01-31 18:13:48,940 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 18:57:05,576 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-01-31 18:57:05,576 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 18:57:05,576 - INFO -  * Restarting with stat
+2025-01-31 18:57:05,705 - WARNING -  * Debugger is active!
+2025-01-31 18:57:05,709 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 19:03:40,096 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 19:03:40,135 - INFO -  * Restarting with stat
+2025-01-31 19:03:40,355 - WARNING -  * Debugger is active!
+2025-01-31 19:03:40,360 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 19:07:32,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-01-31 19:07:32,359 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-31 19:07:32,359 - INFO -  * Restarting with stat
+2025-01-31 19:07:32,490 - WARNING -  * Debugger is active!
+2025-01-31 19:07:32,494 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 19:32:41,754 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 19:32:41,793 - INFO -  * Restarting with stat
+2025-01-31 19:32:42,001 - WARNING -  * Debugger is active!
+2025-01-31 19:32:42,005 - INFO -  * Debugger PIN: 422-706-869
+2025-01-31 19:36:00,278 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-01-31 19:36:00,317 - INFO -  * Restarting with stat
+2025-01-31 19:36:00,535 - WARNING -  * Debugger is active!
+2025-01-31 19:36:00,539 - INFO -  * Debugger PIN: 422-706-869
+2025-02-02 20:01:59,992 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.131:8000
+2025-02-02 20:01:59,992 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:01:59,992 - INFO -  * Restarting with stat
+2025-02-02 20:02:00,120 - WARNING -  * Debugger is active!
+2025-02-02 20:02:00,124 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:02:48,466 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.131:8000
+2025-02-02 20:02:48,466 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:02:48,466 - INFO -  * Restarting with stat
+2025-02-02 20:02:48,595 - WARNING -  * Debugger is active!
+2025-02-02 20:02:48,598 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:05:37,559 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-02-02 20:05:37,559 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:05:37,560 - INFO -  * Restarting with stat
+2025-02-02 20:05:37,696 - WARNING -  * Debugger is active!
+2025-02-02 20:05:37,700 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:08:26,054 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-02-02 20:08:26,055 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:08:26,055 - INFO -  * Restarting with stat
+2025-02-02 20:08:26,182 - WARNING -  * Debugger is active!
+2025-02-02 20:08:26,185 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:11:13,078 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-02-02 20:11:13,116 - INFO -  * Restarting with stat
+2025-02-02 20:11:13,350 - WARNING -  * Debugger is active!
+2025-02-02 20:11:13,354 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:11:14,473 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-02-02 20:11:14,509 - INFO -  * Restarting with stat
+2025-02-02 20:11:14,644 - WARNING -  * Debugger is active!
+2025-02-02 20:11:14,647 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:12:49,590 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-02-02 20:12:49,626 - INFO -  * Restarting with stat
+2025-02-02 20:12:49,758 - WARNING -  * Debugger is active!
+2025-02-02 20:12:49,761 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:14:41,643 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-02-02 20:14:41,686 - INFO -  * Restarting with stat
+2025-02-02 20:14:50,430 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-02-02 20:14:50,430 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:28:10,043 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-02-02 20:28:10,043 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:28:10,043 - INFO -  * Restarting with stat
+2025-02-02 20:28:10,170 - WARNING -  * Debugger is active!
+2025-02-02 20:28:10,174 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:31:46,065 - INFO -  * Detected change in '/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/backend/api.py', reloading
+2025-02-02 20:31:46,107 - INFO -  * Restarting with stat
+2025-02-02 20:31:46,319 - WARNING -  * Debugger is active!
+2025-02-02 20:31:46,322 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:32:52,257 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:8000
+ * Running on https://192.168.1.131:8000
+2025-02-02 20:32:52,257 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 20:32:52,257 - INFO -  * Restarting with stat
+2025-02-02 20:32:52,386 - WARNING -  * Debugger is active!
+2025-02-02 20:32:52,389 - INFO -  * Debugger PIN: 111-956-619
+2025-02-02 20:33:08,636 - INFO - 894jWMuSY9O8Ymc_AAAA: Sending packet OPEN data {'sid': '894jWMuSY9O8Ymc_AAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-02-02 20:33:08,636 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:08] "GET /socket.io/?EIO=4&transport=polling&t=0rs7qa9m HTTP/1.1" 200 -
+2025-02-02 20:33:08,645 - INFO - 894jWMuSY9O8Ymc_AAAA: Received request to upgrade to websocket
+2025-02-02 20:33:08,647 - INFO - 894jWMuSY9O8Ymc_AAAA: Received packet MESSAGE data 0
+2025-02-02 20:33:08,647 - INFO - 894jWMuSY9O8Ymc_AAAA: Sending packet MESSAGE data 0{"sid":"yNJ6kqZ8eqkmGTv8AAAB"}
+2025-02-02 20:33:08,648 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:08] "GET /socket.io/?EIO=4&transport=polling&t=0rs820zd&sid=894jWMuSY9O8Ymc_AAAA HTTP/1.1" 200 -
+2025-02-02 20:33:08,648 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:08] "POST /socket.io/?EIO=4&transport=polling&t=0rs82gls&sid=894jWMuSY9O8Ymc_AAAA HTTP/1.1" 200 -
+2025-02-02 20:33:08,649 - INFO - 894jWMuSY9O8Ymc_AAAA: Upgrade to websocket successful
+2025-02-02 20:33:17,036 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:17] "OPTIONS /api/user/login HTTP/1.1" 200 -
+2025-02-02 20:33:17,039 - INFO - POST request from the address 127.0.0.1
+2025-02-02 20:33:17,259 - INFO - emitting event "login_status" to all [/]
+2025-02-02 20:33:17,259 - INFO - 894jWMuSY9O8Ymc_AAAA: Sending packet MESSAGE data 2["login_status",{"status":"success","message":"Login successful"}]
+2025-02-02 20:33:17,259 - INFO - User login with email test1@app.com was successful.
+2025-02-02 20:33:17,260 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:17] "POST /api/user/login HTTP/1.1" 200 -
+2025-02-02 20:33:19,958 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,959 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,959 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,959 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-02-02 20:33:19,960 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-02-02 20:33:19,960 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-02-02 20:33:19,960 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-02-02 20:33:19,960 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-02-02 20:33:19,960 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-02-02 20:33:19,962 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,962 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-02-02 20:33:19,963 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-02-02 20:33:19,963 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,963 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-02-02 20:33:19,964 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-02-02 20:33:19,965 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,965 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-02-02 20:33:19,965 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-02-02 20:33:19,966 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,966 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-02-02 20:33:19,967 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-02-02 20:33:19,967 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,968 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-02-02 20:33:19,968 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-02-02 20:33:19,973 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,973 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-02-02 20:33:19,974 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-02-02 20:33:19,977 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,977 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,979 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-02-02 20:33:19,978 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,980 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-02-02 20:33:19,979 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-02-02 20:33:19,980 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-02-02 20:33:19,978 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-02-02 20:33:19,981 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-02-02 20:33:19,984 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,985 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-02-02 20:33:19,985 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-02-02 20:33:19,989 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,991 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-02-02 20:33:19,991 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-02-02 20:33:19,991 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,992 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-02-02 20:33:19,992 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-02-02 20:33:19,993 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,994 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-02-02 20:33:19,994 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-02-02 20:33:19,994 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,995 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-02-02 20:33:19,995 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-02-02 20:33:19,996 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,996 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-02-02 20:33:19,996 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-02-02 20:33:19,997 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,997 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-02-02 20:33:19,997 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-02-02 20:33:19,998 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,998 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-02-02 20:33:19,998 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-02-02 20:33:19,999 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:19,999 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-02-02 20:33:19,999 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:19] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-02-02 20:33:20,000 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:20,000 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-02-02 20:33:20,000 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:20] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-02-02 20:33:20,001 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:20,001 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-02-02 20:33:20,001 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:20] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-02-02 20:33:20,002 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:20,002 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-02-02 20:33:20,002 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:20] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-02-02 20:33:20,003 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:20,004 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-02-02 20:33:20,004 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:20] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-02-02 20:33:20,005 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:20,005 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-02-02 20:33:20,006 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:20] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-02-02 20:33:32,476 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /socket.io/?EIO=4&transport=websocket&sid=894jWMuSY9O8Ymc_AAAA HTTP/1.1" 200 -
+2025-02-02 20:33:32,828 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,829 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,829 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-02-02 20:33:32,829 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-02-02 20:33:32,829 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-02-02 20:33:32,829 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-02-02 20:33:32,831 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,831 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-02-02 20:33:32,831 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-02-02 20:33:32,833 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,833 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-02-02 20:33:32,833 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-02-02 20:33:32,836 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,836 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-02-02 20:33:32,836 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-02-02 20:33:32,838 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,839 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-02-02 20:33:32,839 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,839 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-02-02 20:33:32,839 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-02-02 20:33:32,839 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-02-02 20:33:32,843 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,843 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,852 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-02-02 20:33:32,853 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-02-02 20:33:32,854 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,857 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-02-02 20:33:32,858 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-02-02 20:33:32,856 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-02-02 20:33:32,859 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-02-02 20:33:32,859 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,860 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-02-02 20:33:32,860 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-02-02 20:33:32,862 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,863 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-02-02 20:33:32,864 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-02-02 20:33:32,866 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:33:32,866 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-02-02 20:33:32,867 - INFO - 127.0.0.1 - - [02/Feb/2025 20:33:32] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-02-02 20:34:47,874 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,874 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,874 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-02-02 20:34:47,874 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-02-02 20:34:47,875 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-02-02 20:34:47,875 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-02-02 20:34:47,876 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,876 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-02-02 20:34:47,876 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-02-02 20:34:47,878 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,878 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-02-02 20:34:47,878 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-02-02 20:34:47,879 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,880 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-02-02 20:34:47,880 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-02-02 20:34:47,882 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,882 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-02-02 20:34:47,882 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-02-02 20:34:47,883 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,883 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-02-02 20:34:47,883 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-02-02 20:34:47,883 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,884 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-02-02 20:34:47,884 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-02-02 20:34:47,884 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,884 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-02-02 20:34:47,884 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-02-02 20:34:47,884 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,885 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-02-02 20:34:47,885 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-02-02 20:34:47,885 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,885 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-02-02 20:34:47,885 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-02-02 20:34:47,886 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,886 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-02-02 20:34:47,886 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-02-02 20:34:47,887 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,887 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-02-02 20:34:47,887 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-02-02 20:34:47,887 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:47,887 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-02-02 20:34:47,887 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:47] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-02-02 20:34:51,165 - INFO - NRiYznWrQ580Tz-GAAAC: Sending packet OPEN data {'sid': 'NRiYznWrQ580Tz-GAAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-02-02 20:34:51,165 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "GET /socket.io/?EIO=4&transport=polling&t=0tzbuded HTTP/1.1" 200 -
+2025-02-02 20:34:51,172 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:51,172 - INFO - Fetchin usertest1@app.com Transactions: was successful.
+2025-02-02 20:34:51,172 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "GET /api/user/test1@app.com/transaction HTTP/1.1" 200 -
+2025-02-02 20:34:51,173 - INFO - NRiYznWrQ580Tz-GAAAC: Received packet MESSAGE data 0
+2025-02-02 20:34:51,173 - INFO - NRiYznWrQ580Tz-GAAAC: Sending packet MESSAGE data 0{"sid":"mlyK3wZqpAYxH_aZAAAD"}
+2025-02-02 20:34:51,173 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "POST /socket.io/?EIO=4&transport=polling&t=0tzc3ae4&sid=NRiYznWrQ580Tz-GAAAC HTTP/1.1" 200 -
+2025-02-02 20:34:51,174 - INFO - NRiYznWrQ580Tz-GAAAC: Received request to upgrade to websocket
+2025-02-02 20:34:51,175 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "GET /socket.io/?EIO=4&transport=polling&t=0tzc39zd&sid=NRiYznWrQ580Tz-GAAAC HTTP/1.1" 200 -
+2025-02-02 20:34:51,176 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:51,176 - INFO - Fetchin usertest1@app.com Transactions: was successful.
+2025-02-02 20:34:51,176 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "GET /api/user/test1@app.com/transaction HTTP/1.1" 200 -
+2025-02-02 20:34:51,181 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "GET /socket.io/?EIO=4&transport=polling&t=0tzcac0e&sid=NRiYznWrQ580Tz-GAAAC HTTP/1.1" 200 -
+2025-02-02 20:34:51,189 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:51] "GET /socket.io/?EIO=4&transport=polling&t=0tzcjkid&sid=NRiYznWrQ580Tz-GAAAC HTTP/1.1" 200 -
+2025-02-02 20:34:51,190 - INFO - NRiYznWrQ580Tz-GAAAC: Upgrade to websocket successful
+2025-02-02 20:34:57,388 - INFO - bQ-tzySqVvYgKUJeAAAE: Sending packet OPEN data {'sid': 'bQ-tzySqVvYgKUJeAAAE', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000, 'maxPayload': 1000000}
+2025-02-02 20:34:57,388 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:57] "GET /socket.io/?EIO=4&transport=polling&t=0u44lnz6 HTTP/1.1" 200 -
+2025-02-02 20:34:57,398 - INFO - bQ-tzySqVvYgKUJeAAAE: Received packet MESSAGE data 0
+2025-02-02 20:34:57,399 - INFO - bQ-tzySqVvYgKUJeAAAE: Sending packet MESSAGE data 0{"sid":"89ORM8uxbXYD-udnAAAF"}
+2025-02-02 20:34:57,399 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:57] "POST /socket.io/?EIO=4&transport=polling&t=0u44ygp6&sid=bQ-tzySqVvYgKUJeAAAE HTTP/1.1" 200 -
+2025-02-02 20:34:57,400 - INFO - bQ-tzySqVvYgKUJeAAAE: Received request to upgrade to websocket
+2025-02-02 20:34:57,401 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:57] "GET /socket.io/?EIO=4&transport=polling&t=0u44zoyl&sid=bQ-tzySqVvYgKUJeAAAE HTTP/1.1" 200 -
+2025-02-02 20:34:57,402 - INFO - bQ-tzySqVvYgKUJeAAAE: Upgrade to websocket successful
+2025-02-02 20:34:58,600 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,601 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,601 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-02-02 20:34:58,601 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-02-02 20:34:58,601 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-02-02 20:34:58,601 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-02-02 20:34:58,602 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,603 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-02-02 20:34:58,603 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-02-02 20:34:58,604 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,604 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-02-02 20:34:58,604 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-02-02 20:34:58,606 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,606 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-02-02 20:34:58,606 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-02-02 20:34:58,608 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,609 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,610 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-02-02 20:34:58,610 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-02-02 20:34:58,609 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-02-02 20:34:58,612 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,613 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-02-02 20:34:58,613 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-02-02 20:34:58,613 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-02-02 20:34:58,615 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,615 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-02-02 20:34:58,615 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-02-02 20:34:58,616 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,616 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-02-02 20:34:58,616 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-02-02 20:34:58,616 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,617 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-02-02 20:34:58,617 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-02-02 20:34:58,618 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,618 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-02-02 20:34:58,618 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,618 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-02-02 20:34:58,618 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-02-02 20:34:58,618 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-02-02 20:34:58,620 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,620 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-02-02 20:34:58,620 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-02-02 20:34:58,621 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,621 - INFO - Get amount for category Maintenance from user test1@app.com: Success
+2025-02-02 20:34:58,621 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Maintenance HTTP/1.1" 200 -
+2025-02-02 20:34:58,622 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,622 - INFO - Get amount for category Clothes from user test1@app.com: Success
+2025-02-02 20:34:58,622 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Clothes HTTP/1.1" 200 -
+2025-02-02 20:34:58,622 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,622 - INFO - Get amount for category Education from user test1@app.com: Success
+2025-02-02 20:34:58,623 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Education HTTP/1.1" 200 -
+2025-02-02 20:34:58,625 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,625 - INFO - Get amount for category Hobby from user test1@app.com: Success
+2025-02-02 20:34:58,625 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Hobby HTTP/1.1" 200 -
+2025-02-02 20:34:58,626 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,626 - INFO - Get amount for category Cosmetics from user test1@app.com: Success
+2025-02-02 20:34:58,626 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Cosmetics HTTP/1.1" 200 -
+2025-02-02 20:34:58,627 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,627 - INFO - Get amount for category Pets from user test1@app.com: Success
+2025-02-02 20:34:58,627 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Pets HTTP/1.1" 200 -
+2025-02-02 20:34:58,628 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,628 - INFO - Get amount for category Children from user test1@app.com: Success
+2025-02-02 20:34:58,629 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Children HTTP/1.1" 200 -
+2025-02-02 20:34:58,630 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,630 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,630 - INFO - Get amount for category Home from user test1@app.com: Success
+2025-02-02 20:34:58,630 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Home HTTP/1.1" 200 -
+2025-02-02 20:34:58,630 - INFO - Get amount for category Insurance from user test1@app.com: Success
+2025-02-02 20:34:58,630 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Insurance HTTP/1.1" 200 -
+2025-02-02 20:34:58,631 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,631 - INFO - Get amount for category Transport from user test1@app.com: Success
+2025-02-02 20:34:58,631 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,631 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Transport HTTP/1.1" 200 -
+2025-02-02 20:34:58,631 - INFO - Get amount for category Health from user test1@app.com: Success
+2025-02-02 20:34:58,632 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Health HTTP/1.1" 200 -
+2025-02-02 20:34:58,633 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,633 - INFO - Get amount for category Vacation from user test1@app.com: Success
+2025-02-02 20:34:58,633 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Vacation HTTP/1.1" 200 -
+2025-02-02 20:34:58,634 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,634 - INFO - Get amount for all transaction except revenue from user test1@app.com: Success
+2025-02-02 20:34:58,634 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category HTTP/1.1" 200 -
+2025-02-02 20:34:58,635 - INFO - GET request from the address 127.0.0.1
+2025-02-02 20:34:58,635 - INFO - Get amount for category Revenue from user test1@app.com: Success
+2025-02-02 20:34:58,635 - INFO - 127.0.0.1 - - [02/Feb/2025 20:34:58] "GET /api/user/test1@app.com/transaction/category/Revenue HTTP/1.1" 200 -
+2025-02-02 20:35:16,169 - INFO - NRiYznWrQ580Tz-GAAAC: Sending packet PING data None
+2025-02-02 20:35:16,171 - INFO - NRiYznWrQ580Tz-GAAAC: Received packet PONG data 
+2025-02-02 20:35:22,392 - INFO - bQ-tzySqVvYgKUJeAAAE: Sending packet PING data None
+2025-02-02 20:35:22,394 - INFO - bQ-tzySqVvYgKUJeAAAE: Received packet PONG data 
+2025-02-02 20:35:41,175 - INFO - NRiYznWrQ580Tz-GAAAC: Sending packet PING data None
+2025-02-02 20:35:41,177 - INFO - NRiYznWrQ580Tz-GAAAC: Received packet PONG data 
+2025-02-02 20:35:47,398 - INFO - bQ-tzySqVvYgKUJeAAAE: Sending packet PING data None
+2025-02-02 20:35:47,401 - INFO - bQ-tzySqVvYgKUJeAAAE: Received packet PONG data 

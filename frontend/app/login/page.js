@@ -13,7 +13,7 @@ const schema = yup.object().shape({
     password: yup.string().required("Password is required.")
 })
 
-const socket = io('http://localhost:8000');
+const socket = io('https://localhost:8000');
 
 const LoginPage = () => {
     const{
@@ -48,7 +48,7 @@ const LoginPage = () => {
         console.log("Sending data:", data)
 
         try{
-            const response = await fetch('http://localhost:8000/api/user/login', {
+            const response = await fetch('https://localhost:8000/api/user/login', {
                 method: "POST",
                 headers:{
                     'Content-Type': 'application/json'

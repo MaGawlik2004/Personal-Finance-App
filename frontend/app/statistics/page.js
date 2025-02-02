@@ -20,7 +20,7 @@ const StatisticsPage = () => {
             try {
                 const results = await Promise.all(
                     category_list.map(async (category) => {
-                        const apiURL = `http://localhost:8000/api/user/${email}/transaction/category/${category}`
+                        const apiURL = `https://localhost:8000/api/user/${email}/transaction/category/${category}`
                         const response = await fetch(apiURL)
 
                         if (!response.ok) {
@@ -42,7 +42,7 @@ const StatisticsPage = () => {
     useEffect(() => {
         const fetchAllCosts = async () => {
             try {
-                const apiURL = `http://localhost:8000/api/user/${email}/transaction/category`
+                const apiURL = `https://localhost:8000/api/user/${email}/transaction/category`
                 const response = await fetch(apiURL)
 
                 if (!response.ok) {
@@ -62,7 +62,7 @@ const StatisticsPage = () => {
     useEffect(() => {
         const fetchRevenue = async () => {
             try {
-                const apiURL = `http://localhost:8000/api/user/${email}/transaction/category/Revenue`
+                const apiURL = `https://localhost:8000/api/user/${email}/transaction/category/Revenue`
                 const response = await fetch(apiURL)
 
                 if (!response.ok) {

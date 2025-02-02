@@ -15,7 +15,7 @@ const schema = yup.object().shape({
     confirmPassword: yup.string().oneOf([yup.ref('password'), null], 'Passwords must match.').required('Password confirmation is required.'),
 })
 
-const socket = io('http://localhost:8000');
+const socket = io('https://localhost:8000');
 
 const RegistrationPage = () => {
     const router = useRouter()
@@ -62,7 +62,7 @@ const RegistrationPage = () => {
         console.log("Sending data:", data)
 
         try{
-            const response = await fetch('http://localhost:8000/api/user/register', {
+            const response = await fetch('https://localhost:8000/api/user/register', {
                 method:  "PUT",
                 headers: {
                     'Content-Type': 'application/json'

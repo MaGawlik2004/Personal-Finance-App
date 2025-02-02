@@ -13,7 +13,7 @@ const schema = yup.object().shape({
     date: yup.date().required('The date is required.')
 })
 
-const socket = io('http://localhost:8000');
+const socket = io('https://localhost:8000');
 
 const AddTransactionPage = () => {
     const category_list = ['Revenue', 'Maintenance', 'Clothes', 'Education', 'Hobby', 'Cosmetics', 'Children', 'Pets', 'Home', 'Insurance', 'Transport', 'Health', 'Vacation']
@@ -37,7 +37,7 @@ const AddTransactionPage = () => {
         const email = sessionStorage.getItem('email')
 
         try{
-            const response = await fetch(`http://localhost:8000/api/user/${email}/transaction`, {
+            const response = await fetch(`https://localhost:8000/api/user/${email}/transaction`, {
                 method: "PUT",
                 headers: {
                     'Content-Type': 'application/json'

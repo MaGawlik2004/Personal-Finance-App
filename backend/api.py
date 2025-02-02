@@ -11,8 +11,8 @@ from reportlab.pdfgen import canvas
 from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000/*"}})
-socketio = SocketIO(app, cors_allowed_origins="http://localhost:3000", logger=True, engineio_logger=True)
+CORS(app, resources={r"/api/*": {"origins": "https://localhost:3000/*"}})
+socketio = SocketIO(app, cors_allowed_origins="https://localhost:3000", logger=True, engineio_logger=True)
 
 db = Database()
 
@@ -51,7 +51,7 @@ def find_email(email = str):
 def login_account():
     data = request.get_json()
 
-    logging.info(f"POST request from the address {request.client.host}")
+    logging.info(f"POST request from the address {request.remote_addr}")
 
     if find_email(data.get('email')) == False:
         socketio.emit('login_status',{'status': 'error', 'message': 'Account with this email does not exist.'})
@@ -87,7 +87,7 @@ def password_hashing(password):
 def add_transaction(user_email):
     data = request.get_json()
 
-    logging.info(f"PUT request from the address {request.client.host}")
+    logging.info(f"PUT request from the address {request.remote_addr}")
 
     db.add_transaction(data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
     socketio.emit('add_transaction_status', {'status': 'success', 'message': 'Transaction added successfuly.'})
@@ -98,7 +98,7 @@ def add_transaction(user_email):
 def get_transactions(user_email):
     transactions = db.get_transactions_by_user(user_email)
 
-    logging.info(f"GET request from the address {request.client.host}")
+    logging.info(f"GET request from the address {request.remote_addr}")
 
     if not transactions:
         logging.error(f'Error during fetchin transactions from user {user_email}: No transactions found for this user.')
@@ -122,7 +122,7 @@ def get_transactions(user_email):
 def delete_transaction(user_email, transaction_id):
     transaction = db.get_transaction_by_id(transaction_id, user_email)
 
-    logging.info(f"DELETE request from the address {request.client.host}")
+    logging.info(f"DELETE request from the address {request.remote_addr}")
 
     if not transaction:
         logging.error(f'Error during deleteing user {user_email} transaction {transaction_id}: Transaction not found or does not belong to the user.')
@@ -137,7 +137,7 @@ def delete_transaction(user_email, transaction_id):
 def get_transaction_by_id(user_email, transaction_id):
     transaction = db.get_transaction_by_id(transaction_id, user_email)
 
-    logging.info(f"GET request from the address {request.client.host}")
+    logging.info(f"GET request from the address {request.remote_addr}")
 
     if transaction:
         logging.info(f'Getting transaction {transaction_id} from user {user_email}: Success')
@@ -149,7 +149,7 @@ def get_transaction_by_id(user_email, transaction_id):
 @app.route('/api/user/<user_email>/transaction/<transaction_id>', methods = ['PUT'])
 def update_transaction(user_email, transaction_id):
     data = request.get_json()
-    logging.info(f"PUT request from the address {request.client.host}")
+    logging.info(f"PUT request from the address {request.remote_addr}")
     db.update_transaction(transaction_id, data.get('amount'), data.get('category'), data.get('description'), data.get('date'), user_email)
     socketio.emit('update_transaction_status', {'status': 'success', 'message': 'Transaction updated successfuly.'})
     logging.info(f'Updateing transaction {transaction_id} from user {user_email}: Transaction updated')
@@ -157,21 +157,21 @@ def update_transaction(user_email, transaction_id):
 
 @app.route('/api/user/<user_email>/transaction/category/<category>', methods = ['GET'])
 def get_amount_for_category(user_email, category):
-    logging.info(f"GET request from the address {request.client.host}")
+    logging.info(f"GET request from the address {request.remote_addr}")
     amount = db.get_amounts_from_transactions(user_email, category)
     logging.info(f'Get amount for category {category} from user {user_email}: Success')
     return jsonify({"totalAmount": amount}), 200
 
 @app.route('/api/user/<user_email>/transaction/category', methods = ['GET'])
 def get_amount_from_all_transaction_except_revenue(user_email):
-    logging.info(f"GET request from the address {request.client.host}")
+    logging.info(f"GET request from the address {request.remote_addr}")
     amount = db.get_amount_from_all_transaction_except_revenue(user_email)
     logging.info(f'Get amount for all transaction except revenue from user {user_email}: Success')
     return jsonify({'totalAmount': amount}), 200
 
 @app.route('/api/raport/<user_email>', methods = ['GET'])
 def get_raport(user_email):
-    logging.info(f"GET request from the address {request.client.host}")
+    logging.info(f"GET request from the address {request.remote_addr}")
     try:
         pdf_filename = get_pdf(user_email)
 
@@ -243,14 +243,12 @@ def get_pdf(user_email):
 
     return pdf_filename
 
-from flask import send_from_directory
-
 @app.route('/reports/<filename>', methods=['GET'])
 def serve_report(filename):
-    logging.info(f"GET request from the address {request.client.host}")
+    logging.info(f"GET request from the address {request.remote_addr}")
     reports_dir = os.path.abspath('./reports')
     logging.info(f'Serving Report {filename}: Success')
     return send_from_directory(reports_dir, filename)
 
 if __name__ == "__main__":
-     socketio.run(app, host='0.0.0.0', port=8000, debug=True)
+    socketio.run(app, host='0.0.0.0', ssl_context=('/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/frontend/localhost.pem','/Users/mateusz/Studia/Projekt_Protokoly_Sieci_Web/Projekt_PSW/frontend/localhost-key.pem'), port=8000, debug=True)
